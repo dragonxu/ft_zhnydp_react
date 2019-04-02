@@ -1,0 +1,38 @@
+[
+    {
+        "CODE_NAME": "负荷开关",
+        "CON": 1
+    },
+    {
+        "CODE_NAME": "电容器",
+        "CON": 1
+    },
+    {
+        "CODE_NAME": "电抗器",
+        "CON": 1
+    },
+    {
+        "CODE_NAME": "变压器",
+        "CON": 3
+    },
+    {
+        "CODE_NAME": "电缆",
+        "CON": 1
+    },
+    {
+        "CODE_NAME": "断路器",
+        "CON": 1
+    },
+    {
+        "CODE_NAME": "继电保护装置",
+        "CON": 1
+    },
+    {
+        "CODE_NAME": "电压互感器",
+        "CON": 2
+    },
+    {
+        "CODE_NAME": "避雷器",
+        "CON": 1
+    }
+]

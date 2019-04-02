@@ -1,0 +1,19 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "function-constructor": true,
+        "class-name": true,
+        "encoding": true,
+        "interface-name": [true, "always-prefix"],
+        "no-duplicate-imports":true,
+        "no-console": [
+            true,
+            ""
+        ]
+    },
+    "rulesDirectory": []
+}

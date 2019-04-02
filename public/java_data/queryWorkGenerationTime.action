@@ -1,0 +1,42 @@
+[
+    {
+        "CRT": "17:00",
+        "DURATION": 1
+    },
+    {
+        "CRT": "10:00",
+        "DURATION": 1
+    },
+    {
+        "CRT": "12:00",
+        "DURATION": 1
+    },
+    {
+        "CRT": "19:00",
+        "DURATION": 4
+    },
+    {
+        "CRT": "14:00",
+        "DURATION": 5
+    },
+    {
+        "CRT": "08:00",
+        "DURATION": 2
+    },
+    {
+        "CRT": "15:00",
+        "DURATION": 8
+    },
+    {
+        "CRT": "09:00",
+        "DURATION": 3
+    },
+    {
+        "CRT": "13:00",
+        "DURATION": 2
+    },
+    {
+        "CRT": "20:00",
+        "DURATION": 2
+    }
+]

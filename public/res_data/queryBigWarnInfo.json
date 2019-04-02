@@ -1,0 +1,112 @@
+{
+    "resultList": [
+        {
+            "ALARM_START_TIME": "2019/03/06 08:20",
+            "ALARM_VALUE": 0,
+            "ALARM_LEVEL": "特重大告警",
+            "DESCR": "宜兴新高合金制品有限公司（实时）终端[1100000115]中断"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 08:35",
+            "ALARM_VALUE": 0.82,
+            "ALARM_LEVEL": "较重大告警",
+            "DESCR": "无锡江南电缆有限公司东厂区601低压次总（T3变）总功率因素越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 08:32",
+            "ALARM_VALUE": -0.74,
+            "ALARM_LEVEL": "较重大告警",
+            "DESCR": "SVIP江苏中煤电缆有限公司411低压次总总功率因素越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 07:39",
+            "ALARM_VALUE": -0.44,
+            "ALARM_LEVEL": "较重大告警",
+            "DESCR": "SVIP江苏中煤电缆有限公司421低压次总总功率因素越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 08:35",
+            "ALARM_VALUE": 10.72,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏中首建材市场有限公司1#变电站10kV母线Ubc线电压越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 08:32",
+            "ALARM_VALUE": 78,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏新街南方水泥有限公司温湿度传感器湿度越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 08:19",
+            "ALARM_VALUE": 0.9,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "SVIP无锡新苏能复合材料有限公司411低压T2次总总功率因素越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 06:06",
+            "ALARM_VALUE": 10.73,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏共昌轧辊股份有限公司（ESP变电所）10kV母线Ubc线电压越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 06:06",
+            "ALARM_VALUE": 10.8,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏共昌轧辊股份有限公司（ESP变电所）1#出线Uab线电压越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 06:06",
+            "ALARM_VALUE": 10.78,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏共昌轧辊股份有限公司（ESP变电所）10kV母线Uab线电压越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 06:06",
+            "ALARM_VALUE": 10.77,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏共昌轧辊股份有限公司（ESP变电所）2#出线Uab线电压越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/06 06:06",
+            "ALARM_VALUE": 10.75,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏共昌轧辊股份有限公司（ESP变电所）10kV母线Uca线电压越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/05 18:23",
+            "ALARM_VALUE": 78,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "江苏新街南方水泥有限公司环境温湿度湿度越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/05 10:01",
+            "ALARM_VALUE": 76,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "SVIP宜兴市公用产业建设投资有限公司（中星湖滨桥北河西侧排涝泵站）温湿度传感器湿度越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/05 09:58",
+            "ALARM_VALUE": 76,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "SVIP无锡宜美蓝藻资源开发有限公司温湿度传感器湿度越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/05 09:25",
+            "ALARM_VALUE": 76,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "SVIP宜兴市公用产业建设投资有限公司（广汇南路片排涝泵站）温湿度传感器湿度越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/05 02:42",
+            "ALARM_VALUE": 0,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "无锡住信建筑构建有限公司102高压出线总无功功率越限"
+        },
+        {
+            "ALARM_START_TIME": "2019/03/04 08:07",
+            "ALARM_VALUE": 0,
+            "ALARM_LEVEL": "重大报警",
+            "DESCR": "东方环晟光伏（江苏）有限公司401低压次总出线断路器合位置变位"
+        }
+    ]
+}

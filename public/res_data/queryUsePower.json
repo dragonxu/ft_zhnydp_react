@@ -1,0 +1,524 @@
+{
+    "resultList": [
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "宜兴财政局"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "宜兴市徐舍镇人民政府"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "无锡裕德电缆科技有限公司"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "江苏中首建材市场有限公司2#变电站"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "宜兴市高塍镇人民政府"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "SVIP宜兴市杨巷镇文化中心"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "宜兴市森兴橡塑制品有限公司"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "江苏中首建材市场有限公司1#变电站"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "宜兴市永昌轧辊有限公司"
+        },
+        {
+            "USE_LOAD": "",
+            "CONS_NAME": "无锡市兴盛新材料科技有限公司"
+        },
+        {
+            "USE_LOAD": 9230,
+            "CONS_NAME": "江苏共昌轧辊股份有限公司（35kV变电所）"
+        },
+        {
+            "USE_LOAD": 4490.62,
+            "CONS_NAME": "无锡嘉瑞光伏有限公司宜兴电站分公司"
+        },
+        {
+            "USE_LOAD": 4474,
+            "CONS_NAME": "江苏新街南方水泥有限公司"
+        },
+        {
+            "USE_LOAD": 3924,
+            "CONS_NAME": "江苏徐舍南方水泥有限公司"
+        },
+        {
+            "USE_LOAD": 3626,
+            "CONS_NAME": "东方环晟光伏（江苏）有限公司"
+        },
+        {
+            "USE_LOAD": 3449,
+            "CONS_NAME": "无锡华燕新电源有限公司"
+        },
+        {
+            "USE_LOAD": 3117,
+            "CONS_NAME": "无锡江南电缆有限公司西厂区"
+        },
+        {
+            "USE_LOAD": 2751.57,
+            "CONS_NAME": "SVIP江苏鹏鹭电源有限公司"
+        },
+        {
+            "USE_LOAD": 2138,
+            "CONS_NAME": "SVIP江苏中煤电缆有限公司"
+        },
+        {
+            "USE_LOAD": 1983,
+            "CONS_NAME": "SVIP无锡市华美电缆有限公司（南厂区）"
+        },
+        {
+            "USE_LOAD": 1784,
+            "CONS_NAME": "无锡江南电缆有限公司东厂区"
+        },
+        {
+            "USE_LOAD": 1772,
+            "CONS_NAME": "江苏恒合科技有限公司"
+        },
+        {
+            "USE_LOAD": 1752,
+            "CONS_NAME": "无锡江南电缆有限公司南厂区"
+        },
+        {
+            "USE_LOAD": 1578.24,
+            "CONS_NAME": "宜兴市盛鑫轧辊有限公司"
+        },
+        {
+            "USE_LOAD": 1533,
+            "CONS_NAME": "江苏立霸实业股份有限公司"
+        },
+        {
+            "USE_LOAD": 1525,
+            "CONS_NAME": "SVIP无锡明珠电缆有限公司"
+        },
+        {
+            "USE_LOAD": 1411,
+            "CONS_NAME": "江苏宝安电缆有限公司"
+        },
+        {
+            "USE_LOAD": 1271,
+            "CONS_NAME": "江苏汉光甜味剂有限公司"
+        },
+        {
+            "USE_LOAD": 1260,
+            "CONS_NAME": "SVIP无锡新苏能复合材料有限公司"
+        },
+        {
+            "USE_LOAD": 1155.45,
+            "CONS_NAME": "宜兴市国昌轧辊有限公司"
+        },
+        {
+            "USE_LOAD": 963,
+            "CONS_NAME": "江苏益帆高分子材料有限公司"
+        },
+        {
+            "USE_LOAD": 960,
+            "CONS_NAME": "江苏长峰电缆有限公司（厂总部）"
+        },
+        {
+            "USE_LOAD": 957,
+            "CONS_NAME": "SVIP无锡市恒汇电缆有限公司"
+        },
+        {
+            "USE_LOAD": 906,
+            "CONS_NAME": "无锡双诚炭黑有限公司"
+        },
+        {
+            "USE_LOAD": 824,
+            "CONS_NAME": "SVIP宜兴市中医医院"
+        },
+        {
+            "USE_LOAD": 792,
+            "CONS_NAME": "SVIP无锡工艺职业技术学院（老校区）"
+        },
+        {
+            "USE_LOAD": 669,
+            "CONS_NAME": "江苏中超控股股份有限公司（2#变电所T4、T5变)"
+        },
+        {
+            "USE_LOAD": 640,
+            "CONS_NAME": "无锡市群星线缆有限公司"
+        },
+        {
+            "USE_LOAD": 630,
+            "CONS_NAME": "SVIP宜兴市公安局"
+        },
+        {
+            "USE_LOAD": 610,
+            "CONS_NAME": "江苏凯达电缆有限公司"
+        },
+        {
+            "USE_LOAD": 590,
+            "CONS_NAME": "江苏利通电子有限公司（新厂区）"
+        },
+        {
+            "USE_LOAD": 584,
+            "CONS_NAME": "江苏大地电缆有限公司"
+        },
+        {
+            "USE_LOAD": 561,
+            "CONS_NAME": "江苏久立电缆有限公司"
+        },
+        {
+            "USE_LOAD": 544,
+            "CONS_NAME": "江苏中辰电缆有限公司（新厂区）"
+        },
+        {
+            "USE_LOAD": 499,
+            "CONS_NAME": "宜兴水务集团有限公司（氿滨水厂）"
+        },
+        {
+            "USE_LOAD": 495,
+            "CONS_NAME": "SVIP江苏远红电缆有限公司（新厂区）"
+        },
+        {
+            "USE_LOAD": 494,
+            "CONS_NAME": "SVIP江苏环宇汽车零部件有限公司"
+        },
+        {
+            "USE_LOAD": 471,
+            "CONS_NAME": "潞安卓泰祥和金属科技宜兴有限公司"
+        },
+        {
+            "USE_LOAD": 467.74,
+            "CONS_NAME": "SVIP宜兴市文化中心"
+        },
+        {
+            "USE_LOAD": 418,
+            "CONS_NAME": "江苏东峰电缆有限公司（粒子车间）"
+        },
+        {
+            "USE_LOAD": 402,
+            "CONS_NAME": "江苏艾特克阻燃材料有限公司"
+        },
+        {
+            "USE_LOAD": 399,
+            "CONS_NAME": "宜兴水务集团有限公司（任墅泵站）"
+        },
+        {
+            "USE_LOAD": 390.4,
+            "CONS_NAME": "江苏共昌轧辊股份有限公司（ESP变电所）"
+        },
+        {
+            "USE_LOAD": 378,
+            "CONS_NAME": "宜兴市第二人民医院（丁蜀）"
+        },
+        {
+            "USE_LOAD": 372,
+            "CONS_NAME": "SVIP无锡市华美电缆有限公司（北厂区）"
+        },
+        {
+            "USE_LOAD": 354,
+            "CONS_NAME": "无锡嘉瑞光伏有限公司（本部）"
+        },
+        {
+            "USE_LOAD": 350,
+            "CONS_NAME": "SVIP宜兴市金啸铜业有限公司"
+        },
+        {
+            "USE_LOAD": 328.49,
+            "CONS_NAME": "无锡九如城养老产业发展有限公司"
+        },
+        {
+            "USE_LOAD": 322,
+            "CONS_NAME": "江苏东峰电缆有限公司（老厂区）"
+        },
+        {
+            "USE_LOAD": 321,
+            "CONS_NAME": "宜兴市机关事务管理局"
+        },
+        {
+            "USE_LOAD": 314,
+            "CONS_NAME": "宜兴市肿瘤医院"
+        },
+        {
+            "USE_LOAD": 301,
+            "CONS_NAME": "SVIP宜兴市公共建筑建设管理中心（周铁医院）"
+        },
+        {
+            "USE_LOAD": 278,
+            "CONS_NAME": "宜兴供电公司（东山大院）"
+        },
+        {
+            "USE_LOAD": 271,
+            "CONS_NAME": "宜兴市官林医院"
+        },
+        {
+            "USE_LOAD": 265,
+            "CONS_NAME": "宜兴水务集团有限公司（宜城水厂）"
+        },
+        {
+            "USE_LOAD": 256,
+            "CONS_NAME": "宜兴新高合金制品有限公司"
+        },
+        {
+            "USE_LOAD": 249,
+            "CONS_NAME": "宜兴市杰高非织造布有限公司"
+        },
+        {
+            "USE_LOAD": 199.15,
+            "CONS_NAME": "中国邮政集团公司江苏省宜兴分公司"
+        },
+        {
+            "USE_LOAD": 180,
+            "CONS_NAME": "SVIP宜兴市公安局（拘留所）"
+        },
+        {
+            "USE_LOAD": 175.09,
+            "CONS_NAME": "江苏宜兴强制隔离戒毒所"
+        },
+        {
+            "USE_LOAD": 167.53,
+            "CONS_NAME": "宜兴留学人员创业园有限公司"
+        },
+        {
+            "USE_LOAD": 167,
+            "CONS_NAME": "SVIP江苏泛亚电缆有限公司"
+        },
+        {
+            "USE_LOAD": 156,
+            "CONS_NAME": "宜兴公用产业建设投资有限公司（西渚污水泵站）"
+        },
+        {
+            "USE_LOAD": 147,
+            "CONS_NAME": "宜兴宜能国际大酒店有限公司"
+        },
+        {
+            "USE_LOAD": 139,
+            "CONS_NAME": "宜兴市第二高级中学"
+        },
+        {
+            "USE_LOAD": 135.2,
+            "CONS_NAME": "宜兴水务集团有限公司（竹海源水源增压站湖滏水厂）"
+        },
+        {
+            "USE_LOAD": 128,
+            "CONS_NAME": "宜兴市官林镇政府"
+        },
+        {
+            "USE_LOAD": 118,
+            "CONS_NAME": "宜兴市艺蝶针织有限公司"
+        },
+        {
+            "USE_LOAD": 95,
+            "CONS_NAME": "科耐特电缆附件股份有限公司"
+        },
+        {
+            "USE_LOAD": 92.87,
+            "CONS_NAME": "SVIP宜兴市城东实验小学"
+        },
+        {
+            "USE_LOAD": 92,
+            "CONS_NAME": "宜兴市水务集团（横山泵站）"
+        },
+        {
+            "USE_LOAD": 91.36,
+            "CONS_NAME": "宜兴利荣达科技有限公司"
+        },
+        {
+            "USE_LOAD": 90.06,
+            "CONS_NAME": "SVIP无锡汇全物流有限公司"
+        },
+        {
+            "USE_LOAD": 84,
+            "CONS_NAME": "江苏省电力公司宜兴市供电公司（检修基地）"
+        },
+        {
+            "USE_LOAD": 80,
+            "CONS_NAME": "SVIP宜兴市教师进修学校"
+        },
+        {
+            "USE_LOAD": 79,
+            "CONS_NAME": "宜兴市宜丰合金球铸有限公司"
+        },
+        {
+            "USE_LOAD": 77,
+            "CONS_NAME": "SVIP江苏宜兴经济开发区投资发展有限公司（华创基地）"
+        },
+        {
+            "USE_LOAD": 70,
+            "CONS_NAME": "宜兴市张渚镇第二中学（桃溪中学）"
+        },
+        {
+            "USE_LOAD": 67,
+            "CONS_NAME": "宜兴市宏鹏铸钢有限公司"
+        },
+        {
+            "USE_LOAD": 53,
+            "CONS_NAME": "SVIP和桥人民政府（农贸市场）"
+        },
+        {
+            "USE_LOAD": 51,
+            "CONS_NAME": "SVIP宜兴市和桥第二小学"
+        },
+        {
+            "USE_LOAD": 49,
+            "CONS_NAME": "宜兴市公共建筑建设管理中心（行政服务中心）"
+        },
+        {
+            "USE_LOAD": 48,
+            "CONS_NAME": "无锡金涛置业发展有限公司"
+        },
+        {
+            "USE_LOAD": 47,
+            "CONS_NAME": "无锡竹海公园服务有限公司"
+        },
+        {
+            "USE_LOAD": 45.37,
+            "CONS_NAME": "SVIP无锡江丰资源再生有限公司"
+        },
+        {
+            "USE_LOAD": 42,
+            "CONS_NAME": "宜兴市张渚镇社区卫生服务中心"
+        },
+        {
+            "USE_LOAD": 41,
+            "CONS_NAME": "SVIP农村商业银行（新大楼）"
+        },
+        {
+            "USE_LOAD": 39,
+            "CONS_NAME": "SVIP农村商业银行（老大楼）"
+        },
+        {
+            "USE_LOAD": 35,
+            "CONS_NAME": "宜兴市张渚中心幼儿园"
+        },
+        {
+            "USE_LOAD": 34.5,
+            "CONS_NAME": "宜兴市新源物业管理有限公司"
+        },
+        {
+            "USE_LOAD": 32,
+            "CONS_NAME": "SVIP宜兴农工商明丰置业有限公司（英伦尊邸2号站）"
+        },
+        {
+            "USE_LOAD": 27,
+            "CONS_NAME": "SVIP宜兴市宜城街道办事处"
+        },
+        {
+            "USE_LOAD": 23,
+            "CONS_NAME": "SVIP宜兴农工商明丰置业有限公司（英伦尊邸1号站）"
+        },
+        {
+            "USE_LOAD": 22,
+            "CONS_NAME": "SVIP太华新四军纪念馆"
+        },
+        {
+            "USE_LOAD": 18,
+            "CONS_NAME": "宜兴市公共建筑建设管理中心(120急救中心及血站）"
+        },
+        {
+            "USE_LOAD": 18,
+            "CONS_NAME": "SVIP342省道太华收费站"
+        },
+        {
+            "USE_LOAD": 13,
+            "CONS_NAME": "SVIP无锡宜美蓝藻资源开发有限公司"
+        },
+        {
+            "USE_LOAD": 12,
+            "CONS_NAME": "张渚镇政府"
+        },
+        {
+            "USE_LOAD": 6,
+            "CONS_NAME": "宜兴世君置业有限公司（高塍滨水新城三期西侧）"
+        },
+        {
+            "USE_LOAD": 4,
+            "CONS_NAME": "江苏东峰电缆有限公司（新厂区）"
+        },
+        {
+            "USE_LOAD": 2,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（下漳河排涝泵站）"
+        },
+        {
+            "USE_LOAD": 1.38,
+            "CONS_NAME": "江苏宜兴经济开发区投资发展有限公司（投影产业园）"
+        },
+        {
+            "USE_LOAD": 1,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司巷头西路南河西侧排涝泵站"
+        },
+        {
+            "USE_LOAD": 0.81,
+            "CONS_NAME": "中国宜兴环保科技工业园发展总公司"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "宜兴市东枫电气科技有限公司"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "江苏大益茶道艺术中心有限公司"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司西北稍桥东北角排涝泵站"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（东氿大道排涝泵站）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（塘田大桥排涝泵站）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（中星湖滨桥北河西侧排涝泵站）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（广汇南路片排涝泵站）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（叠翠路与阳泉西路交叉处排涝泵站）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP无锡工艺职业技术学院(新校区)"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "江苏利通电子（老厂区）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP江苏金山环保（周铁）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司（东山一村1#排涝泵站）"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市公用产业建设投资有限公司东山一村3#排涝泵站"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "无锡住信建筑构建有限公司"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP江苏康禄养老产业发展有限公司"
+        },
+        {
+            "USE_LOAD": 0,
+            "CONS_NAME": "SVIP宜兴市新建镇人民政府"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "num": 3,
+    "resultList": [
+        {
+            "FZL": 82.2,
+            "TRAN_NAME": "T1变",
+            "CONS_NAME": "无锡华燕新电源有限公司"
+        },
+        {
+            "FZL": 87.04,
+            "TRAN_NAME": "T1变",
+            "CONS_NAME": "宜兴市国昌轧辊有限公司"
+        },
+        {
+            "FZL": 115.7,
+            "TRAN_NAME": "T3变",
+            "CONS_NAME": "无锡华燕新电源有限公司"
+        }
+    ]
+}

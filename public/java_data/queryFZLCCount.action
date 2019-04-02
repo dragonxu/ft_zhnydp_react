@@ -1,0 +1,44 @@
+{
+    "BeforeFive": [
+        {
+            "COUNTJCD": 3307,
+            "COUNTKEHU": 122,
+            "DDATE": "2018-11"
+        }
+    ],
+    "BeforeThree": [
+        {
+            "COUNTJCD": 3403,
+            "COUNTKEHU": 126,
+            "DDATE": "2019-01"
+        }
+    ],
+    "BeforeTwo": [
+        {
+            "COUNTJCD": 3403,
+            "COUNTKEHU": 128,
+            "DDATE": "2019-02"
+        }
+    ],
+    "now": [
+        {
+            "COUNTJCD": 3403,
+            "COUNTKEHU": 133,
+            "DDATE": "2019-04"
+        }
+    ],
+    "BeforeOne": [
+        {
+            "COUNTJCD": 3403,
+            "COUNTKEHU": 130,
+            "DDATE": "2019-03"
+        }
+    ],
+    "BeforeFour": [
+        {
+            "COUNTJCD": 3403,
+            "COUNTKEHU": 126,
+            "DDATE": "2018-12"
+        }
+    ]
+}
