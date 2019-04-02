@@ -1,0 +1,100 @@
+{
+    "resultList": [
+        {
+            "ENERGY_P": 90488.9942,
+            "DATA_DATE": "00:00"
+        },
+        {
+            "ENERGY_P": 91821.1943,
+            "DATA_DATE": "01:00"
+        },
+        {
+            "ENERGY_P": 89140.4681,
+            "DATA_DATE": "02:00"
+        },
+        {
+            "ENERGY_P": 87474.8847,
+            "DATA_DATE": "03:00"
+        },
+        {
+            "ENERGY_P": 88677.4312,
+            "DATA_DATE": "04:00"
+        },
+        {
+            "ENERGY_P": 88314.5957,
+            "DATA_DATE": "05:00"
+        },
+        {
+            "ENERGY_P": 82878.8032,
+            "DATA_DATE": "06:00"
+        },
+        {
+            "ENERGY_P": 79964.9841,
+            "DATA_DATE": "07:00"
+        },
+        {
+            "ENERGY_P": 73827.5889,
+            "DATA_DATE": "08:00"
+        },
+        {
+            "ENERGY_P": 74605.8132,
+            "DATA_DATE": "09:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "10:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "11:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "12:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "13:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "14:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "15:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "16:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "17:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "18:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "19:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "20:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "21:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "22:00"
+        },
+        {
+            "ENERGY_P": "",
+            "DATA_DATE": "23:00"
+        }
+    ]
+}

@@ -1,0 +1,1444 @@
+{
+    "resultList": [
+        {
+            "DATA_DATE": "00:00",
+            "USE_LOAD_PRE": 63010.68,
+            "USE_LOAD_CUR": 88230.34
+        },
+        {
+            "DATA_DATE": "00:05",
+            "USE_LOAD_PRE": 64458.04,
+            "USE_LOAD_CUR": 88666.92
+        },
+        {
+            "DATA_DATE": "00:10",
+            "USE_LOAD_PRE": 64632.73,
+            "USE_LOAD_CUR": 89708.91
+        },
+        {
+            "DATA_DATE": "00:15",
+            "USE_LOAD_PRE": 64765.71,
+            "USE_LOAD_CUR": 90920.12
+        },
+        {
+            "DATA_DATE": "00:20",
+            "USE_LOAD_PRE": 65710.81,
+            "USE_LOAD_CUR": 92172.4
+        },
+        {
+            "DATA_DATE": "00:25",
+            "USE_LOAD_PRE": 66124.82,
+            "USE_LOAD_CUR": 93753.65
+        },
+        {
+            "DATA_DATE": "00:30",
+            "USE_LOAD_PRE": 64832.13,
+            "USE_LOAD_CUR": 91326.32
+        },
+        {
+            "DATA_DATE": "00:35",
+            "USE_LOAD_PRE": 65204.62,
+            "USE_LOAD_CUR": 91557.53
+        },
+        {
+            "DATA_DATE": "00:40",
+            "USE_LOAD_PRE": 66883.54,
+            "USE_LOAD_CUR": 89099.21
+        },
+        {
+            "DATA_DATE": "00:45",
+            "USE_LOAD_PRE": 66258.58,
+            "USE_LOAD_CUR": 90697.45
+        },
+        {
+            "DATA_DATE": "00:50",
+            "USE_LOAD_PRE": 66756.31,
+            "USE_LOAD_CUR": 89722.55
+        },
+        {
+            "DATA_DATE": "00:55",
+            "USE_LOAD_PRE": 66670.69,
+            "USE_LOAD_CUR": 88736.7
+        },
+        {
+            "DATA_DATE": "01:00",
+            "USE_LOAD_PRE": 65979.04,
+            "USE_LOAD_CUR": 90994.51
+        },
+        {
+            "DATA_DATE": "01:05",
+            "USE_LOAD_PRE": 67569.79,
+            "USE_LOAD_CUR": 84383.99
+        },
+        {
+            "DATA_DATE": "01:10",
+            "USE_LOAD_PRE": 66509.26,
+            "USE_LOAD_CUR": 90448.59
+        },
+        {
+            "DATA_DATE": "01:15",
+            "USE_LOAD_PRE": 67309.41,
+            "USE_LOAD_CUR": 94057.72
+        },
+        {
+            "DATA_DATE": "01:20",
+            "USE_LOAD_PRE": 66223.61,
+            "USE_LOAD_CUR": 93449.67
+        },
+        {
+            "DATA_DATE": "01:25",
+            "USE_LOAD_PRE": 67091.75,
+            "USE_LOAD_CUR": 94332.76
+        },
+        {
+            "DATA_DATE": "01:30",
+            "USE_LOAD_PRE": 66410.44,
+            "USE_LOAD_CUR": 93182.06
+        },
+        {
+            "DATA_DATE": "01:35",
+            "USE_LOAD_PRE": 67014.06,
+            "USE_LOAD_CUR": 93288.88
+        },
+        {
+            "DATA_DATE": "01:40",
+            "USE_LOAD_PRE": 67744.61,
+            "USE_LOAD_CUR": 92688.73
+        },
+        {
+            "DATA_DATE": "01:45",
+            "USE_LOAD_PRE": 67368.18,
+            "USE_LOAD_CUR": 92986.75
+        },
+        {
+            "DATA_DATE": "01:50",
+            "USE_LOAD_PRE": 67579.84,
+            "USE_LOAD_CUR": 92605.21
+        },
+        {
+            "DATA_DATE": "01:55",
+            "USE_LOAD_PRE": 67314.31,
+            "USE_LOAD_CUR": 90063.85
+        },
+        {
+            "DATA_DATE": "02:00",
+            "USE_LOAD_PRE": 67464.87,
+            "USE_LOAD_CUR": 89250.51
+        },
+        {
+            "DATA_DATE": "02:05",
+            "USE_LOAD_PRE": 67621.34,
+            "USE_LOAD_CUR": 91239.24
+        },
+        {
+            "DATA_DATE": "02:10",
+            "USE_LOAD_PRE": 66446.89,
+            "USE_LOAD_CUR": 86656.78
+        },
+        {
+            "DATA_DATE": "02:15",
+            "USE_LOAD_PRE": 67292.82,
+            "USE_LOAD_CUR": 86821.44
+        },
+        {
+            "DATA_DATE": "02:20",
+            "USE_LOAD_PRE": 68020.29,
+            "USE_LOAD_CUR": 90539.75
+        },
+        {
+            "DATA_DATE": "02:25",
+            "USE_LOAD_PRE": 67654.98,
+            "USE_LOAD_CUR": 88774.42
+        },
+        {
+            "DATA_DATE": "02:30",
+            "USE_LOAD_PRE": 67379.78,
+            "USE_LOAD_CUR": 86109.81
+        },
+        {
+            "DATA_DATE": "02:35",
+            "USE_LOAD_PRE": 66263.51,
+            "USE_LOAD_CUR": 89083.47
+        },
+        {
+            "DATA_DATE": "02:40",
+            "USE_LOAD_PRE": 67239.4,
+            "USE_LOAD_CUR": 89535.59
+        },
+        {
+            "DATA_DATE": "02:45",
+            "USE_LOAD_PRE": 67365.71,
+            "USE_LOAD_CUR": 84281.26
+        },
+        {
+            "DATA_DATE": "02:50",
+            "USE_LOAD_PRE": 67346.99,
+            "USE_LOAD_CUR": 91516.5
+        },
+        {
+            "DATA_DATE": "02:55",
+            "USE_LOAD_PRE": 66848.47,
+            "USE_LOAD_CUR": 89424
+        },
+        {
+            "DATA_DATE": "03:00",
+            "USE_LOAD_PRE": 67085.15,
+            "USE_LOAD_CUR": 89134.76
+        },
+        {
+            "DATA_DATE": "03:05",
+            "USE_LOAD_PRE": 66873.16,
+            "USE_LOAD_CUR": 84051.58
+        },
+        {
+            "DATA_DATE": "03:10",
+            "USE_LOAD_PRE": 67299.16,
+            "USE_LOAD_CUR": 80007.98
+        },
+        {
+            "DATA_DATE": "03:15",
+            "USE_LOAD_PRE": 65969.53,
+            "USE_LOAD_CUR": 80640.45
+        },
+        {
+            "DATA_DATE": "03:20",
+            "USE_LOAD_PRE": 66535.31,
+            "USE_LOAD_CUR": 87875.45
+        },
+        {
+            "DATA_DATE": "03:25",
+            "USE_LOAD_PRE": 66224.43,
+            "USE_LOAD_CUR": 89787.15
+        },
+        {
+            "DATA_DATE": "03:30",
+            "USE_LOAD_PRE": 67933.65,
+            "USE_LOAD_CUR": 83027.24
+        },
+        {
+            "DATA_DATE": "03:35",
+            "USE_LOAD_PRE": 65897.44,
+            "USE_LOAD_CUR": 91662.37
+        },
+        {
+            "DATA_DATE": "03:40",
+            "USE_LOAD_PRE": 65838.08,
+            "USE_LOAD_CUR": 91860.1
+        },
+        {
+            "DATA_DATE": "03:45",
+            "USE_LOAD_PRE": 66328.54,
+            "USE_LOAD_CUR": 90449.19
+        },
+        {
+            "DATA_DATE": "03:50",
+            "USE_LOAD_PRE": 66258.17,
+            "USE_LOAD_CUR": 90905.09
+        },
+        {
+            "DATA_DATE": "03:55",
+            "USE_LOAD_PRE": 65521.05,
+            "USE_LOAD_CUR": 91214.5
+        },
+        {
+            "DATA_DATE": "04:00",
+            "USE_LOAD_PRE": 65044.58,
+            "USE_LOAD_CUR": 90106.72
+        },
+        {
+            "DATA_DATE": "04:05",
+            "USE_LOAD_PRE": 65597.98,
+            "USE_LOAD_CUR": 88559.42
+        },
+        {
+            "DATA_DATE": "04:10",
+            "USE_LOAD_PRE": 66285.52,
+            "USE_LOAD_CUR": 87755.56
+        },
+        {
+            "DATA_DATE": "04:15",
+            "USE_LOAD_PRE": 66515.93,
+            "USE_LOAD_CUR": 88621.54
+        },
+        {
+            "DATA_DATE": "04:20",
+            "USE_LOAD_PRE": 66329.8,
+            "USE_LOAD_CUR": 87548.48
+        },
+        {
+            "DATA_DATE": "04:25",
+            "USE_LOAD_PRE": 65272.84,
+            "USE_LOAD_CUR": 92205.49
+        },
+        {
+            "DATA_DATE": "04:30",
+            "USE_LOAD_PRE": 66208.41,
+            "USE_LOAD_CUR": 90653.59
+        },
+        {
+            "DATA_DATE": "04:35",
+            "USE_LOAD_PRE": 66555.2,
+            "USE_LOAD_CUR": 90040.15
+        },
+        {
+            "DATA_DATE": "04:40",
+            "USE_LOAD_PRE": 66616.39,
+            "USE_LOAD_CUR": 88494.55
+        },
+        {
+            "DATA_DATE": "04:45",
+            "USE_LOAD_PRE": 67367.03,
+            "USE_LOAD_CUR": 90701.21
+        },
+        {
+            "DATA_DATE": "04:50",
+            "USE_LOAD_PRE": 66748.15,
+            "USE_LOAD_CUR": 91531.57
+        },
+        {
+            "DATA_DATE": "04:55",
+            "USE_LOAD_PRE": 68183.88,
+            "USE_LOAD_CUR": 92691.98
+        },
+        {
+            "DATA_DATE": "05:00",
+            "USE_LOAD_PRE": 67399.25,
+            "USE_LOAD_CUR": 86308.64
+        },
+        {
+            "DATA_DATE": "05:05",
+            "USE_LOAD_PRE": 68185.82,
+            "USE_LOAD_CUR": 86592.46
+        },
+        {
+            "DATA_DATE": "05:10",
+            "USE_LOAD_PRE": 68350.14,
+            "USE_LOAD_CUR": 86810.05
+        },
+        {
+            "DATA_DATE": "05:15",
+            "USE_LOAD_PRE": 67186.68,
+            "USE_LOAD_CUR": 86812.8
+        },
+        {
+            "DATA_DATE": "05:20",
+            "USE_LOAD_PRE": 67817.39,
+            "USE_LOAD_CUR": 91895.3
+        },
+        {
+            "DATA_DATE": "05:25",
+            "USE_LOAD_PRE": 68362.08,
+            "USE_LOAD_CUR": 87132.68
+        },
+        {
+            "DATA_DATE": "05:30",
+            "USE_LOAD_PRE": 68405.27,
+            "USE_LOAD_CUR": 87274.42
+        },
+        {
+            "DATA_DATE": "05:35",
+            "USE_LOAD_PRE": 69187.8,
+            "USE_LOAD_CUR": 87757.06
+        },
+        {
+            "DATA_DATE": "05:40",
+            "USE_LOAD_PRE": 68817.75,
+            "USE_LOAD_CUR": 88938.72
+        },
+        {
+            "DATA_DATE": "05:45",
+            "USE_LOAD_PRE": 67758.48,
+            "USE_LOAD_CUR": 88650.66
+        },
+        {
+            "DATA_DATE": "05:50",
+            "USE_LOAD_PRE": 68507.71,
+            "USE_LOAD_CUR": 89167.53
+        },
+        {
+            "DATA_DATE": "05:55",
+            "USE_LOAD_PRE": 68640.6,
+            "USE_LOAD_CUR": 90137.27
+        },
+        {
+            "DATA_DATE": "06:00",
+            "USE_LOAD_PRE": 67861.19,
+            "USE_LOAD_CUR": 87135.13
+        },
+        {
+            "DATA_DATE": "06:05",
+            "USE_LOAD_PRE": 67576.22,
+            "USE_LOAD_CUR": 90580.24
+        },
+        {
+            "DATA_DATE": "06:10",
+            "USE_LOAD_PRE": 68015.64,
+            "USE_LOAD_CUR": 89874.31
+        },
+        {
+            "DATA_DATE": "06:15",
+            "USE_LOAD_PRE": 67985.01,
+            "USE_LOAD_CUR": 80431.31
+        },
+        {
+            "DATA_DATE": "06:20",
+            "USE_LOAD_PRE": 68928.87,
+            "USE_LOAD_CUR": 85285.36
+        },
+        {
+            "DATA_DATE": "06:25",
+            "USE_LOAD_PRE": 68236.86,
+            "USE_LOAD_CUR": 87182.82
+        },
+        {
+            "DATA_DATE": "06:30",
+            "USE_LOAD_PRE": 69884.98,
+            "USE_LOAD_CUR": 84423.25
+        },
+        {
+            "DATA_DATE": "06:35",
+            "USE_LOAD_PRE": 69111.54,
+            "USE_LOAD_CUR": 84418.47
+        },
+        {
+            "DATA_DATE": "06:40",
+            "USE_LOAD_PRE": 68672.43,
+            "USE_LOAD_CUR": 75634.92
+        },
+        {
+            "DATA_DATE": "06:45",
+            "USE_LOAD_PRE": 65848.48,
+            "USE_LOAD_CUR": 75210.79
+        },
+        {
+            "DATA_DATE": "06:50",
+            "USE_LOAD_PRE": 67462.1,
+            "USE_LOAD_CUR": 76770.98
+        },
+        {
+            "DATA_DATE": "06:55",
+            "USE_LOAD_PRE": 67591.95,
+            "USE_LOAD_CUR": 80653.14
+        },
+        {
+            "DATA_DATE": "07:00",
+            "USE_LOAD_PRE": 68665.22,
+            "USE_LOAD_CUR": 75904.28
+        },
+        {
+            "DATA_DATE": "07:05",
+            "USE_LOAD_PRE": 68752.55,
+            "USE_LOAD_CUR": 75558.44
+        },
+        {
+            "DATA_DATE": "07:10",
+            "USE_LOAD_PRE": 69172.45,
+            "USE_LOAD_CUR": 77890.87
+        },
+        {
+            "DATA_DATE": "07:15",
+            "USE_LOAD_PRE": 69920.69,
+            "USE_LOAD_CUR": 77156.15
+        },
+        {
+            "DATA_DATE": "07:20",
+            "USE_LOAD_PRE": 69922.17,
+            "USE_LOAD_CUR": 78242.35
+        },
+        {
+            "DATA_DATE": "07:25",
+            "USE_LOAD_PRE": 70146.52,
+            "USE_LOAD_CUR": 81067.21
+        },
+        {
+            "DATA_DATE": "07:30",
+            "USE_LOAD_PRE": 69718.91,
+            "USE_LOAD_CUR": 82188.1
+        },
+        {
+            "DATA_DATE": "07:35",
+            "USE_LOAD_PRE": 69956.54,
+            "USE_LOAD_CUR": 82258.38
+        },
+        {
+            "DATA_DATE": "07:40",
+            "USE_LOAD_PRE": 70644.07,
+            "USE_LOAD_CUR": 82567.64
+        },
+        {
+            "DATA_DATE": "07:45",
+            "USE_LOAD_PRE": 70411.35,
+            "USE_LOAD_CUR": 82865.92
+        },
+        {
+            "DATA_DATE": "07:50",
+            "USE_LOAD_PRE": 70399.1,
+            "USE_LOAD_CUR": 81413.87
+        },
+        {
+            "DATA_DATE": "07:55",
+            "USE_LOAD_PRE": 69289.94,
+            "USE_LOAD_CUR": 79423.55
+        },
+        {
+            "DATA_DATE": "08:00",
+            "USE_LOAD_PRE": 67807.75,
+            "USE_LOAD_CUR": 73464.02
+        },
+        {
+            "DATA_DATE": "08:05",
+            "USE_LOAD_PRE": 66582.96,
+            "USE_LOAD_CUR": 76546.75
+        },
+        {
+            "DATA_DATE": "08:10",
+            "USE_LOAD_PRE": 68458.74,
+            "USE_LOAD_CUR": 74377.15
+        },
+        {
+            "DATA_DATE": "08:15",
+            "USE_LOAD_PRE": 69386.3,
+            "USE_LOAD_CUR": 73428.57
+        },
+        {
+            "DATA_DATE": "08:20",
+            "USE_LOAD_PRE": 70000.55,
+            "USE_LOAD_CUR": 72280.47
+        },
+        {
+            "DATA_DATE": "08:25",
+            "USE_LOAD_PRE": 71020.13,
+            "USE_LOAD_CUR": 73376.26
+        },
+        {
+            "DATA_DATE": "08:30",
+            "USE_LOAD_PRE": 70384.21,
+            "USE_LOAD_CUR": 76136.03
+        },
+        {
+            "DATA_DATE": "08:35",
+            "USE_LOAD_PRE": 70753.77,
+            "USE_LOAD_CUR": 75009.49
+        },
+        {
+            "DATA_DATE": "08:40",
+            "USE_LOAD_PRE": 70569.7,
+            "USE_LOAD_CUR": 73700.62
+        },
+        {
+            "DATA_DATE": "08:45",
+            "USE_LOAD_PRE": 71401.47,
+            "USE_LOAD_CUR": 72309.34
+        },
+        {
+            "DATA_DATE": "08:50",
+            "USE_LOAD_PRE": 71669.62,
+            "USE_LOAD_CUR": 72894.85
+        },
+        {
+            "DATA_DATE": "08:55",
+            "USE_LOAD_PRE": 71375.84,
+            "USE_LOAD_CUR": 72762.48
+        },
+        {
+            "DATA_DATE": "09:00",
+            "USE_LOAD_PRE": 70678.42,
+            "USE_LOAD_CUR": 73911.01
+        },
+        {
+            "DATA_DATE": "09:05",
+            "USE_LOAD_PRE": 70403.49,
+            "USE_LOAD_CUR": 73149.6
+        },
+        {
+            "DATA_DATE": "09:10",
+            "USE_LOAD_PRE": 70731.13,
+            "USE_LOAD_CUR": 74536.31
+        },
+        {
+            "DATA_DATE": "09:15",
+            "USE_LOAD_PRE": 70936.32,
+            "USE_LOAD_CUR": 74292.98
+        },
+        {
+            "DATA_DATE": "09:20",
+            "USE_LOAD_PRE": 70894.28,
+            "USE_LOAD_CUR": 74152.49
+        },
+        {
+            "DATA_DATE": "09:25",
+            "USE_LOAD_PRE": 71209.69,
+            "USE_LOAD_CUR": 74197.02
+        },
+        {
+            "DATA_DATE": "09:30",
+            "USE_LOAD_PRE": 71907.21,
+            "USE_LOAD_CUR": 74387.35
+        },
+        {
+            "DATA_DATE": "09:35",
+            "USE_LOAD_PRE": 73413.09,
+            "USE_LOAD_CUR": 75345.17
+        },
+        {
+            "DATA_DATE": "09:40",
+            "USE_LOAD_PRE": 73606.2,
+            "USE_LOAD_CUR": 75841.35
+        },
+        {
+            "DATA_DATE": "09:45",
+            "USE_LOAD_PRE": 73853.42,
+            "USE_LOAD_CUR": 74412.59
+        },
+        {
+            "DATA_DATE": "09:50",
+            "USE_LOAD_PRE": 75812.31,
+            "USE_LOAD_CUR": 74981.66
+        },
+        {
+            "DATA_DATE": "09:55",
+            "USE_LOAD_PRE": 75324.36,
+            "USE_LOAD_CUR": 74866.03
+        },
+        {
+            "DATA_DATE": "10:00",
+            "USE_LOAD_PRE": 75514.29,
+            "USE_LOAD_CUR": 74836.8
+        },
+        {
+            "DATA_DATE": "10:05",
+            "USE_LOAD_PRE": 74867.63,
+            "USE_LOAD_CUR": 73829
+        },
+        {
+            "DATA_DATE": "10:10",
+            "USE_LOAD_PRE": 73711.24,
+            "USE_LOAD_CUR": 75559.31
+        },
+        {
+            "DATA_DATE": "10:15",
+            "USE_LOAD_PRE": 73802.05,
+            "USE_LOAD_CUR": 76763.84
+        },
+        {
+            "DATA_DATE": "10:20",
+            "USE_LOAD_PRE": 74201.28,
+            "USE_LOAD_CUR": 75491.51
+        },
+        {
+            "DATA_DATE": "10:25",
+            "USE_LOAD_PRE": 73846.37,
+            "USE_LOAD_CUR": 75455.48
+        },
+        {
+            "DATA_DATE": "10:30",
+            "USE_LOAD_PRE": 73935.72,
+            "USE_LOAD_CUR": 74554.41
+        },
+        {
+            "DATA_DATE": "10:35",
+            "USE_LOAD_PRE": 73134.67,
+            "USE_LOAD_CUR": 74927.52
+        },
+        {
+            "DATA_DATE": "10:40",
+            "USE_LOAD_PRE": 74246.03,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "10:45",
+            "USE_LOAD_PRE": 74047.23,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "10:50",
+            "USE_LOAD_PRE": 72319.05,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "10:55",
+            "USE_LOAD_PRE": 70052.09,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:00",
+            "USE_LOAD_PRE": 70147.06,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:05",
+            "USE_LOAD_PRE": 68160.36,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:10",
+            "USE_LOAD_PRE": 69194.57,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:15",
+            "USE_LOAD_PRE": 70762.77,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:20",
+            "USE_LOAD_PRE": 70154.83,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:25",
+            "USE_LOAD_PRE": 71008.46,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:30",
+            "USE_LOAD_PRE": 71029.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:35",
+            "USE_LOAD_PRE": 71687.54,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:40",
+            "USE_LOAD_PRE": 72468.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:45",
+            "USE_LOAD_PRE": 72060.5,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:50",
+            "USE_LOAD_PRE": 72585.21,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "11:55",
+            "USE_LOAD_PRE": 71624.72,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:00",
+            "USE_LOAD_PRE": 74083.43,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:05",
+            "USE_LOAD_PRE": 74691.63,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:10",
+            "USE_LOAD_PRE": 77289.32,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:15",
+            "USE_LOAD_PRE": 78629.97,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:20",
+            "USE_LOAD_PRE": 77907.16,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:25",
+            "USE_LOAD_PRE": 78042.47,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:30",
+            "USE_LOAD_PRE": 76747.32,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:35",
+            "USE_LOAD_PRE": 76597.82,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:40",
+            "USE_LOAD_PRE": 77793.77,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:45",
+            "USE_LOAD_PRE": 77097.9,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:50",
+            "USE_LOAD_PRE": 77637.49,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "12:55",
+            "USE_LOAD_PRE": 76105.79,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:00",
+            "USE_LOAD_PRE": 76571.18,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:05",
+            "USE_LOAD_PRE": 76836.29,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:10",
+            "USE_LOAD_PRE": 77450.53,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:15",
+            "USE_LOAD_PRE": 77692.21,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:20",
+            "USE_LOAD_PRE": 76597.54,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:25",
+            "USE_LOAD_PRE": 77376.99,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:30",
+            "USE_LOAD_PRE": 76916.59,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:35",
+            "USE_LOAD_PRE": 77192.08,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:40",
+            "USE_LOAD_PRE": 76493.79,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:45",
+            "USE_LOAD_PRE": 77004.08,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:50",
+            "USE_LOAD_PRE": 77390.01,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "13:55",
+            "USE_LOAD_PRE": 76810.93,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:00",
+            "USE_LOAD_PRE": 76641.68,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:05",
+            "USE_LOAD_PRE": 76822.92,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:10",
+            "USE_LOAD_PRE": 77167.9,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:15",
+            "USE_LOAD_PRE": 77267.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:20",
+            "USE_LOAD_PRE": 75276.3,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:25",
+            "USE_LOAD_PRE": 74909.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:30",
+            "USE_LOAD_PRE": 75903.55,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:35",
+            "USE_LOAD_PRE": 74241.49,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:40",
+            "USE_LOAD_PRE": 74617.06,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:45",
+            "USE_LOAD_PRE": 75733.46,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:50",
+            "USE_LOAD_PRE": 75255.84,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "14:55",
+            "USE_LOAD_PRE": 73312.58,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:00",
+            "USE_LOAD_PRE": 73763.25,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:05",
+            "USE_LOAD_PRE": 73538.26,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:10",
+            "USE_LOAD_PRE": 73273.3,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:15",
+            "USE_LOAD_PRE": 73479.59,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:20",
+            "USE_LOAD_PRE": 73363.21,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:25",
+            "USE_LOAD_PRE": 73203.17,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:30",
+            "USE_LOAD_PRE": 74351.22,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:35",
+            "USE_LOAD_PRE": 73830.05,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:40",
+            "USE_LOAD_PRE": 72830.55,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:45",
+            "USE_LOAD_PRE": 73606.43,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:50",
+            "USE_LOAD_PRE": 73679.64,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "15:55",
+            "USE_LOAD_PRE": 72993.74,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:00",
+            "USE_LOAD_PRE": 73650.07,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:05",
+            "USE_LOAD_PRE": 72981.53,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:10",
+            "USE_LOAD_PRE": 72799.65,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:15",
+            "USE_LOAD_PRE": 72709.27,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:20",
+            "USE_LOAD_PRE": 74320.79,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:25",
+            "USE_LOAD_PRE": 72540.89,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:30",
+            "USE_LOAD_PRE": 73949.26,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:35",
+            "USE_LOAD_PRE": 73016.99,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:40",
+            "USE_LOAD_PRE": 71438.98,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:45",
+            "USE_LOAD_PRE": 70520.28,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:50",
+            "USE_LOAD_PRE": 70287.19,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "16:55",
+            "USE_LOAD_PRE": 69225.53,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:00",
+            "USE_LOAD_PRE": 66815.72,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:05",
+            "USE_LOAD_PRE": 66117.24,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:10",
+            "USE_LOAD_PRE": 64441.3,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:15",
+            "USE_LOAD_PRE": 63878.39,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:20",
+            "USE_LOAD_PRE": 64764.54,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:25",
+            "USE_LOAD_PRE": 64253.83,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:30",
+            "USE_LOAD_PRE": 65140.44,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:35",
+            "USE_LOAD_PRE": 64859.99,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:40",
+            "USE_LOAD_PRE": 65008.87,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:45",
+            "USE_LOAD_PRE": 64251.23,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:50",
+            "USE_LOAD_PRE": 65153.19,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "17:55",
+            "USE_LOAD_PRE": 63822.29,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:00",
+            "USE_LOAD_PRE": 63954.57,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:05",
+            "USE_LOAD_PRE": 63365.51,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:10",
+            "USE_LOAD_PRE": 64738.91,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:15",
+            "USE_LOAD_PRE": 64935.88,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:20",
+            "USE_LOAD_PRE": 65524.88,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:25",
+            "USE_LOAD_PRE": 65645.96,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:30",
+            "USE_LOAD_PRE": 66593.34,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:35",
+            "USE_LOAD_PRE": 65639.33,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:40",
+            "USE_LOAD_PRE": 65522.03,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:45",
+            "USE_LOAD_PRE": 66568.26,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:50",
+            "USE_LOAD_PRE": 66435.32,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "18:55",
+            "USE_LOAD_PRE": 68195.18,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:00",
+            "USE_LOAD_PRE": 68617.21,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:05",
+            "USE_LOAD_PRE": 67554.06,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:10",
+            "USE_LOAD_PRE": 68006.02,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:15",
+            "USE_LOAD_PRE": 68665.05,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:20",
+            "USE_LOAD_PRE": 70299.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:25",
+            "USE_LOAD_PRE": 72515.03,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:30",
+            "USE_LOAD_PRE": 74754.67,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:35",
+            "USE_LOAD_PRE": 74445.8,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:40",
+            "USE_LOAD_PRE": 73304,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:45",
+            "USE_LOAD_PRE": 74961.71,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:50",
+            "USE_LOAD_PRE": 75045.03,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "19:55",
+            "USE_LOAD_PRE": 74563.01,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:00",
+            "USE_LOAD_PRE": 73665.55,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:05",
+            "USE_LOAD_PRE": 75095.27,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:10",
+            "USE_LOAD_PRE": 74599.67,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:15",
+            "USE_LOAD_PRE": 73827.34,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:20",
+            "USE_LOAD_PRE": 75023.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:25",
+            "USE_LOAD_PRE": 75537.81,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:30",
+            "USE_LOAD_PRE": 73516.41,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:35",
+            "USE_LOAD_PRE": 73636.38,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:40",
+            "USE_LOAD_PRE": 74951.92,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:45",
+            "USE_LOAD_PRE": 75233.45,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:50",
+            "USE_LOAD_PRE": 76783.97,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "20:55",
+            "USE_LOAD_PRE": 78930.93,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:00",
+            "USE_LOAD_PRE": 72706.88,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:05",
+            "USE_LOAD_PRE": 80670.09,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:10",
+            "USE_LOAD_PRE": 84152.58,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:15",
+            "USE_LOAD_PRE": 84974.51,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:20",
+            "USE_LOAD_PRE": 84737.95,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:25",
+            "USE_LOAD_PRE": 86296.81,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:30",
+            "USE_LOAD_PRE": 86438.89,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:35",
+            "USE_LOAD_PRE": 85334.58,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:40",
+            "USE_LOAD_PRE": 86853.28,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:45",
+            "USE_LOAD_PRE": 87512.43,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:50",
+            "USE_LOAD_PRE": 88184.42,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "21:55",
+            "USE_LOAD_PRE": 88717.97,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:00",
+            "USE_LOAD_PRE": 88953.04,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:05",
+            "USE_LOAD_PRE": 90693.01,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:10",
+            "USE_LOAD_PRE": 90551.05,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:15",
+            "USE_LOAD_PRE": 90397.64,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:20",
+            "USE_LOAD_PRE": 88981.01,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:25",
+            "USE_LOAD_PRE": 89863.97,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:30",
+            "USE_LOAD_PRE": 89072.48,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:35",
+            "USE_LOAD_PRE": 88670.45,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:40",
+            "USE_LOAD_PRE": 88311.22,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:45",
+            "USE_LOAD_PRE": 87763.18,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:50",
+            "USE_LOAD_PRE": 87193.24,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "22:55",
+            "USE_LOAD_PRE": 87199.28,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:00",
+            "USE_LOAD_PRE": 88900.64,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:05",
+            "USE_LOAD_PRE": 89239.19,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:10",
+            "USE_LOAD_PRE": 89348.75,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:15",
+            "USE_LOAD_PRE": 87641.15,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:20",
+            "USE_LOAD_PRE": 88135.62,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:25",
+            "USE_LOAD_PRE": 88851.12,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:30",
+            "USE_LOAD_PRE": 90173.68,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:35",
+            "USE_LOAD_PRE": 88990.12,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:40",
+            "USE_LOAD_PRE": 88611.17,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:45",
+            "USE_LOAD_PRE": 85563.41,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:50",
+            "USE_LOAD_PRE": 81031.71,
+            "USE_LOAD_CUR": ""
+        },
+        {
+            "DATA_DATE": "23:55",
+            "USE_LOAD_PRE": 82826.95,
+            "USE_LOAD_CUR": ""
+        }
+    ]
+}
