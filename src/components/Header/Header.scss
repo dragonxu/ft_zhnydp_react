@@ -1,0 +1,122 @@
+@import "../../common/scss/__export.scss";
+
+.header {
+    width: $minWidth;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include loadBg("#{$imgFolder}/title_decorate.png");
+
+    h1 {
+        padding-bottom: 36px;
+
+        .gradient-title {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 48px;
+            font-weight: bold;
+        }
+    }
+
+    .header-nav {
+        $navItemInterval: 26px;
+
+        ul {
+            li {
+                $itemHeight: 60px;
+                width: 260px;
+                height: $itemHeight;
+                margin-right: $navItemInterval;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    @include loadBg("#{$imgFolder}/menu-button-left.png");
+                    font-size: 24px;
+                    line-height: $itemHeight;
+                    color: #8aedff;
+
+                    &>div {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    &.active {
+                        @include loadBg("#{$imgFolder}/menu-button-left-actived.png");
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &.right-nav {
+            ul {
+                li {
+                    margin-right: 0;
+                    margin-left: $navItemInterval;
+
+                    a {
+                        @include loadBg("#{$imgFolder}/menu-button-right.png");
+
+                        &.active {
+                            @include loadBg("#{$imgFolder}/menu-button-right-actived.png");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .icon {
+        $size: 25px;
+        @include square($size);
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+
+        &.icon-web-title {
+            $size: 60px;
+            @include square($size);
+            @include loadBg("#{$imgFolder}/icons_app.png", -340px 9px, initial);
+        }
+
+        &.icon-view {
+            @include loadBg("#{$imgFolder}/icons_app.png", -192px 2px, initial);
+        }
+
+        &.icon-monitor {
+            @include loadBg("#{$imgFolder}/icons_app.png", -167px 2px, initial);
+        }
+
+        &.icon-analysis {
+            @include loadBg("#{$imgFolder}/icons_app.png", -217px 2px, initial);
+        }
+
+        &.icon-dispatch {
+            @include loadBg("#{$imgFolder}/icons_app.png", -265px 2px, initial);
+        }
+    }
+
+    .active {
+        .icon {
+            &.icon-view {
+                background-position: -241px 2px;
+            }
+
+            &.icon-monitor {
+                background-position: -72px 2px;
+            }
+
+            &.icon-analysis {
+                background-position: -47px 2px;
+            }
+            &.icon-dispatch {
+                background-position: -98px 2px;
+            }
+        }
+    }
+}

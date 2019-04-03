@@ -13,6 +13,15 @@
         "no-console": [
             true,
             ""
+        ],
+        "space-before-function-paren": [
+            true,
+            "never"
+        ],
+        "indent": [
+            true,
+            "spaces",
+            4
         ]
     },
     "rulesDirectory": []

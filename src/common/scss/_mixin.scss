@@ -1,0 +1,23 @@
+@mixin loadBg($url, $pos: 0 0, $size: 100% 100%, $repeat: no-repeat) {
+    background: {
+        image: url($url);
+        position: $pos;
+        size: $size;
+        repeat: $repeat;
+    }
+}
+
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin circle($size) {
+    @include square($size);
+    border-radius: 100%;
+}
+
+@mixin oneLineText($height) {
+    height: $height;
+    line-height: $height;
+}
