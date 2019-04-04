@@ -14,6 +14,10 @@
             true,
             ""
         ],
+        "no-namespace": [
+            true,
+            "allow-declarations"
+        ],
         "space-before-function-paren": [
             true,
             "never"
@@ -22,7 +26,17 @@
             true,
             "spaces",
             4
-        ]
+        ],
+        "max-line-length": false
     },
-    "rulesDirectory": []
+    "rulesDirectory": [
+        "src"
+    ],
+    "linterOptions": {
+        "exclude": [
+            "node_modules",
+            "**/node_modules",
+            "/node_modules"
+        ]
+    }
 }

@@ -1,0 +1,31 @@
+@import "../../common/scss/_export";
+
+.general-view {
+    .col-1 {
+        width: 468px;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        height: 300px;
+    }
+
+    .view-block {
+        margin-bottom: 14px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .intro-block{
+        p{
+            font-size: 18px;
+            line-height: 1.7;
+            text-indent: 2em;
+            text-align: left;
+            color: white;
+        }
+    }
+}

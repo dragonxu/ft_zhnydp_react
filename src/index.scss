@@ -40,12 +40,12 @@ body {
 }
 
 #root {
-	width: 1920px;
-	height: 1080px;
-	background-color: blue;
-	position: absolute;
-	top: 0;
-	left: 0;
+    width: 1920px;
+    height: 1080px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 code {
@@ -55,7 +55,7 @@ code {
 
 
 .gradient-title {
-    background-image: linear-gradient(to top, #03c4ff, #b9faff);
+    background-image: linear-gradient(to top, #03c4ff, #b9faff 60%, #fff 65%, #b9faff 70%);
     background-clip: text;
     color: transparent;
 }

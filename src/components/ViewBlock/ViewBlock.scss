@@ -1,0 +1,74 @@
+@import "../../common/scss/_export";
+
+.view-block {
+    max-width: 80vw;
+    min-height: 60px;
+    padding: 20px;
+    background-color: #034a8e;
+    position: relative;
+
+    .view-block-corner {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border: 3px solid transparent;
+        $borderColor: #50f9fe;
+        $dirX: left right;
+        $dirY: top bottom;
+
+        @each $nameX in $dirX {
+            @each $nameY in $dirY {
+                &.corner-#{$nameX}-#{$nameY} {
+                    #{$nameX}: 0;
+                    #{$nameY}: 0;
+                    border-#{$nameX}-color: $borderColor;
+                    border-#{$nameY}-color: $borderColor;
+                }
+            }
+        }
+    }
+
+    .view-block-title {
+        text-align: left;
+
+        .gradient-title {
+            padding: 0 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            width: 30px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url("../../assets/img/icons_app.png");
+        }
+
+        &::before {
+            background-position: -289px 4px;
+        }
+
+        &::after {
+            background-position: -319px 4px;
+        }
+    }
+
+    .view-block-body {
+        $titleHeight: 30px;
+        width: 100%;
+        height: 100%;
+
+        .view-block-title {
+            @include oneLineText($titleHeight);
+            font-size: 22px;
+        }
+
+        .view-block-content {
+            padding-top: 10px;
+            height: calc(100% - #{$titleHeight});
+        }
+    }
+}
