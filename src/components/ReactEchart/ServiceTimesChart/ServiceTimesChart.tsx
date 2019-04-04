@@ -2,7 +2,7 @@ import * as Echarts from "echarts";
 import { mixedSameType } from "../../../common/functions/obj";
 import { ReactEchart } from "../ReactEchart";
 
-export class ServiceTimesChart extends ReactEchart{
+export class ServiceTimesChart extends ReactEchart {
     protected styleOption: Echarts.EChartOption = {
         xAxis: {
             data: [
