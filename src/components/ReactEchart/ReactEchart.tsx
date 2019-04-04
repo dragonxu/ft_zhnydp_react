@@ -13,7 +13,6 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
     public className: string = "react-echart full-view";
     protected elmRef: React.RefObject<HTMLDivElement> = createRef();
     protected eChart!: Echarts.ECharts;
-    protected options: Echarts.EChartOption = {};
     public render(): JSX.Element {
         return (
             <div className={this.className} ref={this.elmRef}></div>
@@ -21,8 +20,6 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
     }
     public componentDidMount() {
         this.eChart = Echarts.init(this.elmRef.current as HTMLDivElement);
-        const options = this.mixinOptions(this.props.options);
-        this.setOption(this.options);
     }
     public setOption(opts: Echarts.EChartOption): this {
         console.log(this.eChart, opts);
