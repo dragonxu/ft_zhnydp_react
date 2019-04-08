@@ -26,7 +26,7 @@ export class ServiceTimesChart extends ReactEchart {
     public componentDidMount() {
         this.initEChart();
         this.loadData().then((res) => {
-            this.setOptionByData(res)
+            this.setOptionByData(res);
         });
     }
     protected getOptions(): Echarts.EChartOption {
@@ -48,7 +48,7 @@ export class ServiceTimesChart extends ReactEchart {
                     color: "#43fdff",
                 },
                 type: "bar",
-            }
+            },
         ];
         this.setOption(options);
     }

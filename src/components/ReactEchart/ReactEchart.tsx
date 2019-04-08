@@ -4,7 +4,7 @@ import { copy, mixedSameType } from "../../common/functions/obj";
 import defaultOptions from "../../common/var/ReactEchart/defaultOptions";
 
 declare namespace ReactEchart {
-    export interface IProps{
+    export interface IProps {
         dataUrl: string;
     }
 }
