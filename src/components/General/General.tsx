@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ReactEchart } from "../ReactEchart/ReactEchart";
+import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
 import { ViewBlock } from "../ViewBlock/ViewBlock";
 import "./General.scss";
 export class General extends Component {
@@ -17,9 +17,10 @@ export class General extends Component {
                         blockTitle="客户服务次数"
                         className="service-times-block row-2"
                     >
+                        <ServiceTimesChart dataUrl="https://sin-iti.github.io/ft_zhnydp_react/public/res_data/queryWorkNoteInfo.json"></ServiceTimesChart>
                     </ViewBlock>
                     <ViewBlock
-                        blockTitle="能源类型"
+                        blockTitle="能源类型接入用户统计"
                         className="energy-type-block row-3"
                     ></ViewBlock>
                 </div>
