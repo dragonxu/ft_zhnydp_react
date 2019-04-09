@@ -14,7 +14,7 @@ export class Progress extends Component<Progress.IProps> {
     public render() {
         const self = this;
         return (
-            <div className={this.className()}>
+            <div className={this.className()} data-percent={this.props.percent}>
                 {this.getNameElm()}
                 <div className="progress-box">
                     <div className="progress-lip" style={{width: self.getLipWidth()}}></div>
