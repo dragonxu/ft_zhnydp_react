@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { EnergyType } from "../EnergyType/EnergyType";
 import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
 import { ViewBlock } from "../ViewBlock/ViewBlock";
 import "./General.scss";
@@ -22,7 +23,9 @@ export class General extends Component {
                     <ViewBlock
                         blockTitle="能源类型接入用户统计"
                         className="energy-type-block row-3"
-                    ></ViewBlock>
+                    >
+                        <EnergyType></EnergyType>
+                    </ViewBlock>
                 </div>
             </div>
         );

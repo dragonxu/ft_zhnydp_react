@@ -1,6 +1,6 @@
 {
-    "gas": 0,
-    "water": 0,
+    "gas": 50,
+    "water": 20,
     "electric": 126,
-    "hot": 0
+    "hot": 70
 }

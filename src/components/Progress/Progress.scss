@@ -1,0 +1,16 @@
+.progress {
+    display: flex;
+    justify-content: space-between;
+
+    .progress-box{
+        position: relative;
+
+        .progress-lip{
+            width: 10%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

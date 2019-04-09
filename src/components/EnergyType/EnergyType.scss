@@ -1,0 +1,46 @@
+@import "../../common/scss/_export";
+
+.energy-type {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+
+    .progress {
+        $nameWidth: 40px;
+        @include oneLineText(36px);
+        position: relative;
+        font-weight: bolder;
+
+        .progress-name {
+            width: $nameWidth;
+        }
+
+        .progress-box {
+            width: calc(100% - #{$nameWidth});
+            border: 1px solid #14589d;
+        }
+
+        .progress-num {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        $energyTypes: "electricity",
+        "hot",
+        "water",
+        "gas";
+
+        @each $type in $energyTypes {
+            &.#{$type} {
+                .progress-box {
+                    .progress-lip {
+                        background-image: url("../../assets/img/lip-#{$type}.png");
+                    }
+                }
+            }
+        }
+    }
+}
