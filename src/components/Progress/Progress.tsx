@@ -67,7 +67,7 @@ export class Progress extends Component<Progress.IProps> {
         const boxWidth = boxElm.offsetWidth;
         const cacheRight = this.props.cacheRight || 20;
         const maxLeft = boxWidth - numWidth - cacheRight;
-        console.log(numWidth);
+        // console.log(numWidth);
         if (this.props.moveNumWithLip) {
             const cacheWidth = this.props.cacheWidth || 5;
             const left = this.props.percent * boxWidth + cacheWidth;

@@ -40,7 +40,11 @@
         }
     }
 
-    .data-list.view-block{
+    .data-list.view-block {
+        padding: 0;
         background-color: transparent;
+        .view-block-content{
+            padding: 0;
+        }
     }
 }

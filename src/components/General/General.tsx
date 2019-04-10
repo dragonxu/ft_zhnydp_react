@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { EnergyType } from "../EnergyType/EnergyType";
+import { GeneralList } from "../GeneralList/GeneralList";
 import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
 import { ViewBlock } from "../ViewBlock/ViewBlock";
 import "./General.scss";
@@ -29,7 +30,9 @@ export class General extends Component {
                 </div>
                 {/* col-2 */}
                 <div className="col-2">
-                    <ViewBlock className="data-list"></ViewBlock>
+                    <ViewBlock className="data-list">
+                        <GeneralList></GeneralList>
+                    </ViewBlock>
                 </div>
                 <div className="col-3">
                     <ViewBlock

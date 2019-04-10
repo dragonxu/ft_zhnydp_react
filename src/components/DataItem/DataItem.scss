@@ -1,4 +1,32 @@
 @import "../../common/scss/_export";
-.data-item{
+
+.data-item {
+    width: 220px;
     height: 96px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $bgColor;
+
+    .item-name {
+        font-size: 17px;
+        color: #6dc5e2;
+    }
+
+    .item-data {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        color: white;
+    }
+
+    .item-num {
+        font-size: 36px;
+    }
+
+    .item-unit {
+        font-size: 24px;
+    }
 }

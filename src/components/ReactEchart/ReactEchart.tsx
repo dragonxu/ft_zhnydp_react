@@ -28,7 +28,7 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
         return this;
     }
     public setOption(opts: Echarts.EChartOption): this {
-        console.log(this.eChart, opts);
+        // console.log(this.eChart, opts);
         this.eChart.setOption(opts);
         return this;
     }

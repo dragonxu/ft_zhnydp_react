@@ -8,7 +8,7 @@ export class Header extends Component {
                 <div className="left-nav header-nav">
                     <ul className="list-box">
                         <li>
-                            <NavLink to="/general" title="平台概览">
+                            <NavLink to="/" exact title="平台概览">
                                 <div className="icon icon-view"></div>
                                 <div>平台概览</div>
                             </NavLink>
