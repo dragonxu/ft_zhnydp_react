@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import "./Progress.scss";
 
 declare namespace Progress {
@@ -7,19 +7,24 @@ declare namespace Progress {
         progressNum?: number;
         percent: number;
         className?: string;
+        moveNumWithLip?: boolean;
+        cacheWidth?: number;
+        cacheRight?: number;
     }
 }
 
 export class Progress extends Component<Progress.IProps> {
+    protected numElm = createRef<HTMLDivElement>();
+    protected boxElmRef = createRef<HTMLDivElement>();
     public render() {
         const self = this;
         return (
             <div className={this.className()} data-percent={this.props.percent}>
                 {this.getNameElm()}
-                <div className="progress-box">
+                <div className="progress-box" ref={this.boxElmRef}>
                     <div className="progress-lip" style={{width: self.getLipWidth()}}></div>
+                    {this.getNumElm()}
                 </div>
-                {this.getNumElm()}
             </div>
         );
     }
@@ -49,6 +54,28 @@ export class Progress extends Component<Progress.IProps> {
         if (this.props.progressNum === undefined || isNaN(this.props.progressNum)) {
             return null;
         }
-        return <div className="progress-num">{this.props.progressNum}</div>;
+        const self = this;
+        return <div className="progress-num" ref={this.numElm} style={{ left: self.getNumLeft() }}>{this.props.progressNum}</div>;
+    }
+    protected getNumLeft(): string {
+        const numElm = this.numElm.current;
+        if (!numElm) {
+            return "0px";
+        }
+        const numWidth = numElm.offsetWidth;
+        const boxElm = this.boxElmRef.current;
+        const boxWidth = boxElm.offsetWidth;
+        const cacheRight = this.props.cacheRight || 20;
+        const maxLeft = boxWidth - numWidth - cacheRight;
+        console.log(numWidth);
+        if (this.props.moveNumWithLip) {
+            const cacheWidth = this.props.cacheWidth || 5;
+            const left = this.props.percent * boxWidth + cacheWidth;
+            if (left >= maxLeft) {
+                return maxLeft.toString() + "px";
+            }
+            return left.toString() + "px";
+        }
+        return maxLeft.toString() + "px";
     }
 }

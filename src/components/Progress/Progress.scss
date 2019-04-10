@@ -2,15 +2,23 @@
     display: flex;
     justify-content: space-between;
 
-    .progress-box{
+    .progress-box {
         position: relative;
 
-        .progress-lip{
-            width: 10%;
+        .progress-lip {
+            width: 0;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
+            transition: 1s all ease;
+        }
+
+        .progress-num {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s all ease;
         }
     }
 }

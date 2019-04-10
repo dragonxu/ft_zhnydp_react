@@ -28,10 +28,34 @@ export class EnergyType extends Component<any, EnergyType.IState> {
     public render() {
         return (
             <div className="energy-type" ref={this.el} data-electricity={this.state.electricity}>
-                <Progress className="electricity" progressName="电" percent={this.getPercent(this.state.electricity)} progressNum={this.state.electricity}></Progress>
-                <Progress className="hot" progressName="热" percent={this.getPercent(this.state.hot)} progressNum={this.state.hot}></Progress>
-                <Progress className="water" progressName="水" percent={this.getPercent(this.state.water)} progressNum={this.state.water}></Progress>
-                <Progress className="gas" progressName="气" percent={this.getPercent(this.state.gas)} progressNum={this.state.gas}></Progress>
+                <Progress
+                    className="electricity"
+                    progressName="电"
+                    percent={this.getPercent(this.state.electricity)}
+                    progressNum={this.state.electricity}
+                    moveNumWithLip={true}
+                ></Progress>
+                <Progress
+                    className="hot"
+                    progressName="热"
+                    percent={this.getPercent(this.state.hot)}
+                    progressNum={this.state.hot}
+                    moveNumWithLip={true}
+                ></Progress>
+                <Progress
+                    className="water"
+                    progressName="水"
+                    percent={this.getPercent(this.state.water)}
+                    progressNum={this.state.water}
+                    moveNumWithLip={true}
+                ></Progress>
+                <Progress
+                    className="gas"
+                    progressName="气"
+                    percent={this.getPercent(this.state.gas)}
+                    progressNum={this.state.gas}
+                    moveNumWithLip={true}
+                ></Progress>
             </div>
         );
     }
@@ -52,8 +76,6 @@ export class EnergyType extends Component<any, EnergyType.IState> {
                 gas: data.gas,
                 hot: data.hot,
                 water: data.water,
-            }, () => {
-                this.setProgressNumPosition();
             });
         });
     }
@@ -62,26 +84,5 @@ export class EnergyType extends Component<any, EnergyType.IState> {
         const res = await fetch(url);
         const data = await res.json() as EnergyType.IData;
         return data;
-    }
-    protected setProgressNumPosition() {
-        const elm = this.el.current as HTMLDivElement;
-        elm.querySelectorAll(".progress").forEach((progressElm) => {
-            this.calcNumPositionIn(progressElm as HTMLDivElement);
-        });
-    }
-    protected calcNumPositionIn(progressElm: HTMLDivElement) {
-        const box = progressElm.querySelector(".progress-box") as HTMLDivElement;
-        const lip = box.querySelector(".progress-lip") as HTMLDivElement;
-        const boxWidth = box.offsetWidth;
-        const lipWidth = lip.offsetWidth;
-        const remainWidth = boxWidth - lipWidth;
-        const numElm = progressElm.querySelector(".progress-num") as HTMLDivElement;
-        const numElmWidth = numElm.offsetWidth;
-        const cacheWidth = 5;
-        let right = remainWidth - numElmWidth - cacheWidth;
-        if (right < 0) {
-            right = 0;
-        }
-        numElm.style.right = right + "px";
     }
 }

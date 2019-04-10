@@ -27,6 +27,16 @@ export class General extends Component {
                         <EnergyType></EnergyType>
                     </ViewBlock>
                 </div>
+                {/* col-2 */}
+                <div className="col-2">
+                    <ViewBlock className="data-list"></ViewBlock>
+                </div>
+                <div className="col-3">
+                    <ViewBlock
+                        className="data-count"
+                        blockTitle="数据统计"
+                    ></ViewBlock>
+                </div>
             </div>
         );
     }

@@ -1,8 +1,19 @@
 @import "../../common/scss/_export";
 
 .general-view {
+    display: flex;
+    justify-content: space-around;
+
     .col-1 {
         width: 468px;
+    }
+
+    .col-2 {
+        width: 930px;
+    }
+
+    .col-3 {
+        width: 466px;
     }
 
     .row-1,
@@ -19,13 +30,17 @@
         }
     }
 
-    .intro-block{
-        p{
+    .intro-block {
+        p {
             font-size: 18px;
             line-height: 1.7;
             text-indent: 2em;
             text-align: left;
             color: white;
         }
+    }
+
+    .data-list.view-block{
+        background-color: transparent;
     }
 }

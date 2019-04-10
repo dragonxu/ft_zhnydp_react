@@ -21,12 +21,7 @@
             width: calc(100% - #{$nameWidth});
             border: 1px solid #14589d;
         }
-
-        .progress-num {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
+ 
 
         $energyTypes: "electricity",
         "hot",
