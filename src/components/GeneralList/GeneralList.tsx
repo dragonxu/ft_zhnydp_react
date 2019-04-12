@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+// import { StFetch } from "../../common/functions/StFetch";
+import { store } from "../../redux/GeneralListStore";
 import { DataItem } from "../DataItem/DataItem";
 import "./GeneralList.scss";
-import { StFetch } from "../../common/functions/StFetch";
 declare namespace GeneralList {
     export interface IState {
         nowElectricity: number;
@@ -41,8 +42,8 @@ export class GeneralList extends Component<any, GeneralList.IState> {
         this.loadData();
     }
     protected loadData() {
-        StFetch<GeneralList.IResData>("/getDataList.json").then((data) => {
-            console.log(data);
+        store.subscribe(() => {
+            const { data } = store.getState();
             this.setState({
                 collect: data.collect,
                 load: data.load,

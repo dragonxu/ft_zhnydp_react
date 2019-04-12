@@ -7,7 +7,7 @@ declare namespace StComponent {
     }
 }
 
-export class StComponent<P extends StComponent.IProps, S = {}, SS = any> extends Component<P, S, SS> {
+export class StComponent<P extends StComponent.IProps = {}, S = {}, SS = any> extends Component<P, S, SS> {
     protected getClassName(): string {
         let clsName = camelCaseToLine(this.constructor.name);
         if (this.props.className) {

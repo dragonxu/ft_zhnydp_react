@@ -2,6 +2,7 @@ import * as Echarts from "echarts";
 import React, { Component, createRef } from "react";
 import { copy, mixedSameType } from "../../common/functions/obj";
 import defaultOptions from "../../common/var/ReactEchart/defaultOptions";
+import { StFetch } from "../../common/functions/StFetch";
 
 declare namespace ReactEchart {
     export interface IProps {
@@ -43,10 +44,7 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
     protected getOptions(): Echarts.EChartOption {
         return ReactEchart.defaultOptions;
     }
-    protected async loadData() {
-        const res = await fetch(this.props.dataUrl);
-        const data = await res.json();
-        // console.log(data)
-        return data;
+    protected async loadData<T>(): Promise<T> {
+        return await StFetch<T>(this.props.dataUrl);
     }
 }

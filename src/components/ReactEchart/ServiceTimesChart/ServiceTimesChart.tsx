@@ -25,7 +25,7 @@ export class ServiceTimesChart extends ReactEchart {
     };
     public componentDidMount() {
         this.initEChart();
-        this.loadData().then((res) => {
+        this.loadData<ServiceTimesChart.IChartData>().then((res) => {
             this.setOptionByData(res);
         });
     }

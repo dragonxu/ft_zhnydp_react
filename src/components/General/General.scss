@@ -18,10 +18,13 @@
 
     .row-1,
     .row-2,
-    .row-3 {
+    .last-row {
         height: 300px;
     }
 
+    .client-map-block{
+        height: 504px;
+    } 
     .view-block {
         margin-bottom: 14px;
 
@@ -43,7 +46,8 @@
     .data-list.view-block {
         padding: 0;
         background-color: transparent;
-        .view-block-content{
+
+        .view-block-content {
             padding: 0;
         }
     }

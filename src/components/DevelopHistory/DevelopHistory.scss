@@ -1,0 +1,110 @@
+@import "../../common/scss/_export";
+
+.develop-history {
+    position: relative;
+
+    .trace-line {
+        width: 100%;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        background-image: url("../../assets/img/timeline-line.png");
+        background-repeat: repeat-x;
+    }
+
+    .time-point {
+        $infoBg: #0a3776;
+        $infoBorderStyle: 2px solid #1f75ad;
+        @include circle(10px);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 6px #248db6;
+        background-color: $lightBgColor;
+
+        .info {
+            width: 100px;
+            height: 60px;
+            border: $infoBorderStyle;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $infoBg;
+            font-size: 14px;
+
+            dt {
+                width: 54px;
+                text-align: left;
+                color: #6dc5e2;
+            }
+
+            dd {
+                font-family: "黑体";
+                color: white;
+            }
+
+            &::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border: $infoBorderStyle;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                background-color: $infoBg;
+            }
+        }
+
+        .time-string {
+            width: 100px;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            transform: translate(-50%, 0);
+            font-size: 16px;
+            text-align: center;
+            color: #32d7fa;
+        }
+
+        @for $i from 0 through 5 {
+            &[data-index="#{$i}"] {
+                left: #{10 + $i * 16%};
+
+                @if ($i % 2==0) {
+                    .info {
+                        top: -80px;
+
+                        &:after {
+                            top: 100%;
+                            border-top-width: 0;
+                            border-left-width: 0;
+                        }
+                    }
+
+                    .time-string {
+                        top: 20px;
+                    }
+                }
+
+                @else {
+                    .info {
+                        &:after {
+                            top: 0;
+                            border-bottom-width: 0;
+                            border-right-width: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

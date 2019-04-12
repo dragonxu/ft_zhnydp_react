@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { StFetch } from "../../common/functions/StFetch";
+import { store } from "../../redux/GeneralListStore";
+import { ClientMap } from "../ClientMap/ClientMap";
+import { DevelopHistory } from "../DevelopHistory/DevelopHistory";
 import { EnergyType } from "../EnergyType/EnergyType";
 import { GeneralList } from "../GeneralList/GeneralList";
 import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
@@ -19,11 +23,11 @@ export class General extends Component {
                         blockTitle="客户服务次数"
                         className="service-times-block row-2"
                     >
-                        <ServiceTimesChart dataUrl="https://sin-iti.github.io/ft_zhnydp_react/public/res_data/queryWorkNoteInfo.json"></ServiceTimesChart>
+                        <ServiceTimesChart dataUrl="queryWorkNoteInfo.json"></ServiceTimesChart>
                     </ViewBlock>
                     <ViewBlock
                         blockTitle="能源类型接入用户统计"
-                        className="energy-type-block row-3"
+                        className="energy-type-block last-row"
                     >
                         <EnergyType></EnergyType>
                     </ViewBlock>
@@ -33,14 +37,36 @@ export class General extends Component {
                     <ViewBlock className="data-list">
                         <GeneralList></GeneralList>
                     </ViewBlock>
+                    <ViewBlock className="client-map-block">
+                        <ClientMap></ClientMap>
+                    </ViewBlock>
+                    <ViewBlock
+                        className="last-row"
+                        blockTitle="发展历程"
+                    >
+                        <DevelopHistory></DevelopHistory>
+                    </ViewBlock>
                 </div>
+                {/* col-3 */}
                 <div className="col-3">
                     <ViewBlock
-                        className="data-count"
+                        className="data-count-block row-1"
                         blockTitle="数据统计"
-                    ></ViewBlock>
+                    >
+                    </ViewBlock>
                 </div>
             </div>
         );
+    }
+    public componentDidMount() {
+        this.loadData();
+    }
+    protected loadData() {
+        StFetch("/getDataList.json").then((res) => {
+            store.dispatch({
+                data: res,
+                type: "update",
+            });
+        });
     }
 }

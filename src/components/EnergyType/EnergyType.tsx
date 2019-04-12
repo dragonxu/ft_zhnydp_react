@@ -1,6 +1,7 @@
 import React, { Component, createRef } from "react";
 import { Progress } from "../Progress/Progress";
 import "./EnergyType.scss";
+import { StFetch } from "../../common/functions/StFetch";
 
 declare namespace EnergyType {
     export interface IData {
@@ -80,9 +81,7 @@ export class EnergyType extends Component<any, EnergyType.IState> {
         });
     }
     protected async loadData(): Promise<EnergyType.IData> {
-        const url = "https://sin-iti.github.io/ft_zhnydp_react/public/res_data/queryPowerTypeCount.json";
-        const res = await fetch(url);
-        const data = await res.json() as EnergyType.IData;
+        const data = await StFetch<EnergyType.IData>("/queryPowerTypeCount.json");
         return data;
     }
 }

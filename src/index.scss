@@ -75,3 +75,10 @@ ol {
         }
     }
 }
+
+dl.list-inline{
+    dt, dd{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

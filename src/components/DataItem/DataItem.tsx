@@ -41,7 +41,6 @@ export class DataItem extends StComponent<DataItem.IProps, DataItem.IState> {
         }
     }
     protected startUpdateNowNum(num: number) {
-        console.log("startUpdateNowNum");
         this.targetNum = num;
         this.duration = isNaN(this.props.duration) ? 400 : this.props.duration;
         this.startTime = Date.now();
