@@ -6,7 +6,7 @@ declare namespace DataItem {
     export interface IProps {
         name: string;
         num: number;
-        unit: string;
+        unit?: string;
         className?: string;
         duration?: number;
     }
@@ -30,7 +30,7 @@ export class DataItem extends StComponent<DataItem.IProps, DataItem.IState> {
                 <div className="item-name">{this.props.name}</div>
                 <div className="item-data">
                     <div className="item-num" target-num={this.props.num}>{this.state.nowNum}</div>
-                    <div className="item-unit">{this.props.unit}</div>
+                    {this.getUnitElm()}
                 </div>
             </div>
         );
@@ -39,6 +39,12 @@ export class DataItem extends StComponent<DataItem.IProps, DataItem.IState> {
         if (this.props.num !== nextProps.num) {
             this.startUpdateNowNum(nextProps.num);
         }
+    }
+    protected getUnitElm() {
+        if (this.props.unit) {
+            return (<div className="item-unit">{this.props.unit}</div>);
+        }
+        return null;
     }
     protected startUpdateNowNum(num: number) {
         this.targetNum = num;

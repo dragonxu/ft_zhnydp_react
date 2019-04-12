@@ -29,4 +29,14 @@
     .item-unit {
         font-size: 24px;
     }
+
+    &.top-data {
+        .item-data {
+            order: 1;
+        }
+
+        .item-name{
+            order: 2;
+        }
+    }
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { StFetch } from "../../common/functions/StFetch";
 import { store } from "../../redux/GeneralListStore";
 import { ClientMap } from "../ClientMap/ClientMap";
+import { DataCount } from "../DataCount/DataCount";
 import { DevelopHistory } from "../DevelopHistory/DevelopHistory";
 import { EnergyType } from "../EnergyType/EnergyType";
 import { GeneralList } from "../GeneralList/GeneralList";
@@ -52,6 +53,12 @@ export class General extends Component {
                     <ViewBlock
                         className="data-count-block row-1"
                         blockTitle="数据统计"
+                    >
+                        <DataCount></DataCount>
+                    </ViewBlock>
+                    <ViewBlock
+                        className="interface-type-block row-2"
+                        blockTitle="接入类型统计"
                     >
                     </ViewBlock>
                 </div>

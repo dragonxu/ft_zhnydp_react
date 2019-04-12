@@ -1,0 +1,17 @@
+@import "../../common/scss/_export";
+
+.data-count {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .data-item {
+        width: 50%;
+        margin-bottom: 10px;
+        .item-name,
+        .item-data {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
