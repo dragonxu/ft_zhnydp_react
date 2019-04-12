@@ -10,7 +10,7 @@ declare namespace GeneralList {
         terminal: number;
         collect: number;
     }
-    export interface IResData{
+    export interface IResData {
         electricity: number;
         "load": number;
         "terminal": number;

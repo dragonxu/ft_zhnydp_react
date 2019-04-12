@@ -2,7 +2,7 @@ import { Component } from "react";
 import { camelCaseToLine } from "../functions/string";
 
 declare namespace StComponent {
-    export interface IProps{
+    export interface IProps {
         className?: string;
     }
 }
