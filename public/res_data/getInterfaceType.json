@@ -1,0 +1,16 @@
+{
+    "enterprise": {
+        "iron": 50,
+        "chemicalIndustry": 20,
+        "spin": 56,
+        "machine": 89,
+        "else": 20
+    },
+    "building": {
+        "government": 126,
+        "school": 89,
+        "hospital": 156,
+        "office": 125,
+        "else": 20
+    }
+}

@@ -74,6 +74,10 @@ export class General extends Component {
                 data: res,
                 type: "update",
             });
+        }).finally(() => {
+            setTimeout(() => {
+                this.loadData();
+            }, 1000);
         });
     }
 }
