@@ -11,6 +11,7 @@ declare namespace ServiceTimesChart {
     }
 }
 export class ServiceTimesChart extends ReactEchart {
+    public chartType: ReactEchart.TChartType = "bar";
     protected styleOption: Echarts.EChartOption = {
         xAxis: {
             data: [
@@ -34,6 +35,10 @@ export class ServiceTimesChart extends ReactEchart {
     }
     protected setOptionByData(data: ServiceTimesChart.IChartData) {
         const options = this.getOptions();
+        options.grid = {
+            top: 10,
+            bottom: 20,
+        };
         options.series = [
             {
                 barWidth: 27,

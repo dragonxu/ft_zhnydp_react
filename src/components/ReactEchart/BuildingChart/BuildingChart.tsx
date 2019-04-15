@@ -1,61 +1,55 @@
 import { GeneralListStore, store } from "../../../redux/GeneralListStore";
 import { ReactEchart } from "../ReactEchart";
-import "./EnterpriseChart.scss";
+import "./BuildingChart.scss";
 
-declare namespace EnterpriseChart {
-    export interface IProps {
-        dataUrl?: string;
-    }
-}
-
-export class EnterpriseChart extends ReactEchart {
+export class BuildingChart extends ReactEchart {
     public chartType: ReactEchart.TChartType = "pie";
     public componentDidMount() {
         this.initEChart();
         store.subscribe(() => {
-            const { action, enterprise } = store.getState();
+            const { action, building } = store.getState();
             if (action === "updateInterfaceType") {
-                this.setOptionByData(enterprise);
+                this.setOptionByData(building);
             }
         });
     }
-    protected getSeries(enterprise: GeneralListStore.IEnterprise) {
+    protected getSeries(building: GeneralListStore.IBuilding) {
         return this.mixedPieSeries({
-            name: "企业",
+            name: "楼宇",
             radius: ["50%", "70%"],
             center: ["50%", "36%"],
             data: [
                 {
-                    name: "钢铁",
-                    value: enterprise.iron,
+                    name: "政府",
+                    value: building.government,
                     itemStyle: {
                         color: "#32ecfa",
                     },
                 },
                 {
-                    name: "纺织",
-                    value: enterprise.spin,
+                    name: "学校",
+                    value: building.school,
+                    itemStyle: {
+                        color: "#27ffd1",
+                    },
+                },
+                {
+                    name: "医院",
+                    value: building.hospital,
                     itemStyle: {
                         color: "#ec8b41",
                     },
                 },
                 {
-                    name: "化工",
-                    value: enterprise.chemicalIndustry,
-                    itemStyle: {
-                        color: "#27ffbb",
-                    },
-                },
-                {
-                    name: "机械",
-                    value: enterprise.machine,
+                    name: "写字楼",
+                    value: building.office,
                     itemStyle: {
                         color: "#f8d751",
                     },
                 },
                 {
-                    name: "其它",
-                    value: enterprise.else,
+                    name: "其他",
+                    value: building.else,
                     itemStyle: {
                         color: "#32bdfa",
                     },
@@ -63,8 +57,8 @@ export class EnterpriseChart extends ReactEchart {
             ],
         });
     }
-    protected setOptionByData(enterprise: GeneralListStore.IEnterprise) {
-        const series = this.getSeries(enterprise);
+    protected setOptionByData(building: GeneralListStore.IBuilding) {
+        const series = this.getSeries(building);
         const options = this.mixedOptions({
             series: [
                 series,
@@ -81,7 +75,7 @@ export class EnterpriseChart extends ReactEchart {
                             width: 60,
                             height: 60,
                             backgroundColor: {
-                                image: require("../../../assets/img/enterprise.png"),
+                                image: require("../../../assets/img/building.png"),
                             },
                         },
                     },

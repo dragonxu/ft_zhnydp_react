@@ -4,11 +4,11 @@ import { copy, mixedSameType } from "../../common/functions/obj";
 import { StFetch } from "../../common/functions/StFetch";
 import defaultOptions from "../../common/var/ReactEchart/defaultOptions";
 
-declare namespace ReactEchart {
+export declare namespace ReactEchart {
     export interface IProps {
         dataUrl: string;
     }
-    export type TChartType = "line" | "pie";
+    export type TChartType = "line" | "pie" | "bar";
 }
 export class ReactEchart extends Component<ReactEchart.IProps> {
     protected static readonly defaultOptions: Echarts.EChartOption = defaultOptions;
@@ -43,7 +43,50 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
     public getChartOption() {
         return this.eChart.getOption();
     }
+    protected getPieDefaultOptions() {
+        const options = copy(ReactEchart.defaultOptions);
+        options.xAxis = {
+            show: false,
+        };
+        options.yAxis = {
+            show: false,
+        };
+        return options;
+    }
+    protected getBarDefaultOptions() {
+        const options = copy(ReactEchart.defaultOptions);
+        return mixedSameType(options, {
+            xAxis: {
+                axisLabel: {
+                    interval: 0,
+                },
+                axisTick: {
+                    alignWithLabel: true,
+                },
+                splitLine: {
+                    show: false,
+                },
+            },
+            yAxis: {
+                axisLabel: {
+                    interval: 0,
+                },
+                axisTick: {
+                    alignWithLabel: true,
+                },
+                splitLine: {
+                    show: false,
+                },
+            },
+        });
+    }
     protected getOptions(): Echarts.EChartOption {
+        if (this.chartType === "pie") {
+            return this.getPieDefaultOptions();
+        }
+        if (this.chartType === "bar") {
+            return this.getBarDefaultOptions();
+        }
         return ReactEchart.defaultOptions;
     }
     protected async loadData<T>(): Promise<T> {
@@ -60,6 +103,24 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
             data: [],
         };
         return mixedSameType(defaultPieSeries, newPieSeries);
+    }
+    protected mixedBarSeries(newBarSeries: Echarts.EChartOption.SeriesBar) {
+        const defaultBarSeries: Echarts.EChartOption.SeriesBar = {
+            type: "bar",
+            itemStyle: {
+                color: "#43fdff",
+            },
+        };
+        return mixedSameType(defaultBarSeries, newBarSeries);
+    }
+    protected mixedSeries(newSeries: Echarts.EChartOption.Series) {
+        if (this.chartType === "pie") {
+            return this.mixedPieSeries(newSeries as Echarts.EChartOption.SeriesPie);
+        }
+        if (this.chartType === "bar") {
+            return this.mixedBarSeries(newSeries as Echarts.EChartOption.SeriesBar);
+        }
+        return newSeries;
     }
     protected mixedOptions(newOpt: Echarts.EChartOption) {
         const oldOpt = this.getOptions();

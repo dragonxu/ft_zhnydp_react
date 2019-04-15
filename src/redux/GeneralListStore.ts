@@ -1,4 +1,5 @@
 import { combineReducers, createStore } from "redux";
+import { mixedSameType } from "../common/functions/obj";
 
 export declare namespace GeneralListStore {
     export interface IResData {
@@ -11,7 +12,6 @@ export declare namespace GeneralListStore {
         checkPointNum: number;
         energyReport: number;
     }
-    export type TActionType = "update" | "getAll" | "updateInterfaceType";
     export interface IEnterprise {
         iron: number;
         spin: number;
@@ -26,6 +26,13 @@ export declare namespace GeneralListStore {
         office: number;
         else: number;
     }
+    export interface IEnteredDevice {
+        electronic: number;
+        environment: number;
+        light: number;
+        energy: number;
+        else: number;
+    }
     export interface IInterfaceType {
         enterprise: IEnterprise;
         building: IBuilding;
@@ -34,6 +41,7 @@ export declare namespace GeneralListStore {
         data: IResData;
         action: TActionType;
         interfaceType: IInterfaceType;
+        enteredDevice: IEnteredDevice;
     }
     export interface IUpdateAction {
         type: "update";
@@ -46,7 +54,12 @@ export declare namespace GeneralListStore {
         type: "updateInterfaceType";
         data: Partial<IInterfaceType>;
     }
-    export type TAction = ICommonAction | IUpdateAction | IUpdateInterfaceAction;
+    export interface IUpdateEnteredDevice {
+        type: "updateEnteredDevice";
+        data: Partial<IEnteredDevice>;
+    }
+    export type TAction = ICommonAction | IUpdateAction | IUpdateInterfaceAction | IUpdateEnteredDevice;
+    export type TActionType = "update" | "getAll" | "updateInterfaceType" | "updateEnteredDevice";
 }
 
 const initState: GeneralListStore.IState = {
@@ -76,7 +89,14 @@ const initState: GeneralListStore.IState = {
             office: 0,
             else: 0,
         },
-    }
+    },
+    enteredDevice: {
+        electronic: 20,
+        environment: 30,
+        light: 50,
+        energy: 90,
+        else: 90,
+    },
 };
 
 function updateData(prevData: GeneralListStore.IResData, nextData: Partial<GeneralListStore.IResData>): GeneralListStore.IResData {
@@ -155,9 +175,28 @@ function enterpriseReducer(prevData: GeneralListStore.IEnterprise, actions: Gene
     return data;
 }
 
+function enteredDeviceReducer(prevData: any, actions: GeneralListStore.TAction) {
+    let data: any;
+    if (typeof prevData === "undefined") {
+        data = initState.enteredDevice;
+    } else {
+        data = prevData;
+    }
+    switch (actions.type) {
+        case "updateEnteredDevice":
+            data = mixedSameType(data, actions.data);
+            break;
+        case "getAll":
+        default:
+            break;
+    }
+    return data;
+};
+
 export const store = createStore(combineReducers({
     action: actionReducer,
     data: dataReducer,
     building: buildingReducer,
     enterprise: enterpriseReducer,
+    enteredDevice: enteredDeviceReducer,
 }));

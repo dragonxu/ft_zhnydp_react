@@ -22,9 +22,10 @@
         height: 300px;
     }
 
-    .client-map-block{
+    .client-map-block {
         height: 504px;
-    } 
+    }
+
     .view-block {
         margin-bottom: 14px;
 
@@ -49,6 +50,13 @@
 
         .view-block-content {
             padding: 0;
+        }
+    }
+
+    .interface-type-block {
+        .react-echart.full-view{
+            width: 50%;
+            display: inline-block;
         }
     }
 }

@@ -6,10 +6,12 @@ import { DataCount } from "../DataCount/DataCount";
 import { DevelopHistory } from "../DevelopHistory/DevelopHistory";
 import { EnergyType } from "../EnergyType/EnergyType";
 import { GeneralList } from "../GeneralList/GeneralList";
+import { EnterpriseChart } from "../ReactEchart/EnterpriseChart/EnterpriseChart";
 import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
 import { ViewBlock } from "../ViewBlock/ViewBlock";
 import "./General.scss";
-import { EnterpriseChart } from "../ReactEchart/EnterpriseChart/EnterpriseChart";
+import { BuildingChart } from "../ReactEchart/BuildingChart/BuildingChart";
+import { EnteredDeviceChart } from "../ReactEchart/EnteredDeviceChart/EnteredDeviceChart";
 export class General extends Component {
     public render() {
         return (
@@ -62,6 +64,13 @@ export class General extends Component {
                         blockTitle="接入类型统计"
                     >
                         <EnterpriseChart dataUrl=""></EnterpriseChart>
+                        <BuildingChart dataUrl=""></BuildingChart>
+                    </ViewBlock>
+                    <ViewBlock
+                        className="entered-device-block last-row"
+                        blockTitle="接入设备统计"
+                    >
+                        <EnteredDeviceChart dataUrl=""></EnteredDeviceChart>
                     </ViewBlock>
                 </div>
             </div>
