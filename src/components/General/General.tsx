@@ -9,6 +9,7 @@ import { GeneralList } from "../GeneralList/GeneralList";
 import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
 import { ViewBlock } from "../ViewBlock/ViewBlock";
 import "./General.scss";
+import { EnterpriseChart } from "../ReactEchart/EnterpriseChart/EnterpriseChart";
 export class General extends Component {
     public render() {
         return (
@@ -60,6 +61,7 @@ export class General extends Component {
                         className="interface-type-block row-2"
                         blockTitle="接入类型统计"
                     >
+                        <EnterpriseChart dataUrl=""></EnterpriseChart>
                     </ViewBlock>
                 </div>
             </div>
@@ -69,6 +71,22 @@ export class General extends Component {
         this.loadData();
     }
     protected loadData() {
+        this.loadDataOfDataList();
+        this.loadDataOfInterfaceType();
+    }
+    protected loadDataOfInterfaceType() {
+        StFetch("/getInterfaceType.json").then((res) => {
+            store.dispatch({
+                data: res,
+                type: "updateInterfaceType",
+            });
+        }).finally(() => {
+            setTimeout(() => {
+                this.loadDataOfInterfaceType();
+            }, 1000);
+        });
+    }
+    protected loadDataOfDataList() {
         StFetch("/getDataList.json").then((res) => {
             store.dispatch({
                 data: res,
@@ -76,7 +94,7 @@ export class General extends Component {
             });
         }).finally(() => {
             setTimeout(() => {
-                this.loadData();
+                this.loadDataOfDataList();
             }, 1000);
         });
     }

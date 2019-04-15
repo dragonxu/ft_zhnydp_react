@@ -1,6 +1,6 @@
-import { createStore, combineReducers } from "redux";
+import { combineReducers, createStore } from "redux";
 
-declare namespace GeneralListStore{
+export declare namespace GeneralListStore {
     export interface IResData {
         electricity: number;
         load: number;
@@ -11,10 +11,29 @@ declare namespace GeneralListStore{
         checkPointNum: number;
         energyReport: number;
     }
-    export type TActionType = "update" | "getAll";
+    export type TActionType = "update" | "getAll" | "updateInterfaceType";
+    export interface IEnterprise {
+        iron: number;
+        spin: number;
+        chemicalIndustry: number;
+        machine: number;
+        else: number;
+    }
+    export interface IBuilding {
+        government: number;
+        school: number;
+        hospital: number;
+        office: number;
+        else: number;
+    }
+    export interface IInterfaceType {
+        enterprise: IEnterprise;
+        building: IBuilding;
+    }
     export interface IState {
         data: IResData;
         action: TActionType;
+        interfaceType: IInterfaceType;
     }
     export interface IUpdateAction {
         type: "update";
@@ -23,7 +42,11 @@ declare namespace GeneralListStore{
     export interface ICommonAction {
         type: "getAll";
     }
-    export type TAction = ICommonAction | IUpdateAction;
+    export interface IUpdateInterfaceAction {
+        type: "updateInterfaceType";
+        data: Partial<IInterfaceType>;
+    }
+    export type TAction = ICommonAction | IUpdateAction | IUpdateInterfaceAction;
 }
 
 const initState: GeneralListStore.IState = {
@@ -38,6 +61,22 @@ const initState: GeneralListStore.IState = {
         load: 0,
         terminal: 0,
     },
+    interfaceType: {
+        enterprise: {
+            iron: 0,
+            chemicalIndustry: 0,
+            spin: 0,
+            machine: 0,
+            else: 0,
+        },
+        building: {
+            government: 0,
+            school: 0,
+            hospital: 0,
+            office: 0,
+            else: 0,
+        },
+    }
 };
 
 function updateData(prevData: GeneralListStore.IResData, nextData: Partial<GeneralListStore.IResData>): GeneralListStore.IResData {
@@ -56,10 +95,14 @@ function dataReducer(prevData: GeneralListStore.IResData, actions: GeneralListSt
         data = initState.data;
     }
     switch (actions.type) {
+        // case "updateInterfaceType":
+        //     console.log(data, prevData);
+        //     break;
         case "update":
             data = updateData(prevData, actions.data);
             break;
         case "getAll":
+        default:
             if (typeof prevData === "undefined") {
                 data = initState.data;
             } else {
@@ -76,7 +119,45 @@ function actionReducer(prevData: GeneralListStore.TActionType = "getAll", action
     return prevAction;
 }
 
+function buildingReducer(prevData: GeneralListStore.IBuilding, actions: GeneralListStore.TAction) {
+    let data: GeneralListStore.IBuilding;
+    switch (actions.type) {
+        case "updateInterfaceType":
+            data = actions.data.building;
+            break;
+        case "getAll":
+        default:
+            if (typeof prevData === "undefined") {
+                data = initState.interfaceType.building;
+            } else {
+                data = prevData;
+            }
+            break;
+    }
+    return data;
+}
+
+function enterpriseReducer(prevData: GeneralListStore.IEnterprise, actions: GeneralListStore.TAction) {
+    let data: GeneralListStore.IEnterprise;
+    switch (actions.type) {
+        case "updateInterfaceType":
+            data = actions.data.enterprise;
+            break;
+        case "getAll":
+        default:
+            if (typeof prevData === "undefined") {
+                data = initState.interfaceType.enterprise;
+            } else {
+                data = prevData;
+            }
+            break;
+    }
+    return data;
+}
+
 export const store = createStore(combineReducers({
     action: actionReducer,
     data: dataReducer,
+    building: buildingReducer,
+    enterprise: enterpriseReducer,
 }));

@@ -14,10 +14,6 @@
             true,
             ""
         ],
-        "no-namespace": [
-            true,
-            "allow-declarations"
-        ],
         "space-before-function-paren": [
             true,
             "never"
@@ -28,7 +24,8 @@
             4
         ],
         "max-line-length": false,
-        "object-literal-sort-keys": false
+        "object-literal-sort-keys": false,
+        "no-namespace": false
     },
     "rulesDirectory": [
         "src"
@@ -37,7 +34,8 @@
         "exclude": [
             "node_modules",
             "**/node_modules",
-            "/node_modules"
+            "/node_modules",
+            "node_modules/*"
         ]
     }
 }
