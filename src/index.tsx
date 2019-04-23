@@ -10,3 +10,21 @@ ReactDOM.render(<App />, document.getElementById("root"));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+/*
+function resetTransform() {
+    const winWidth = window.innerWidth;
+    const winHeight = window.innerHeight;
+    const designWidth = 1920;
+    const designHeight = 1080;
+    const scaleX = winWidth / designWidth;
+    const scaleY = winHeight / designHeight;
+    const elm = document.getElementById("root") as HTMLElement;
+    elm.style.transform = `scale(${scaleX}, ${scaleY})`;
+}
+
+resetTransform();
+window.addEventListener("resize", function() {
+    resetTransform();
+});
+*/

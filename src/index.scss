@@ -46,6 +46,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    transform-origin: 0 0;
 }
 
 code {
@@ -59,14 +60,15 @@ code {
     background-clip: text;
     color: transparent;
 }
-
+a{
+    text-decoration: none;
+}
 ul,
 ol {
     &.list-box {
         &>li {
             float: left;
         }
-
         &:after {
             content: "";
             height: 0;

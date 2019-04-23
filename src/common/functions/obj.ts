@@ -21,7 +21,7 @@ export function mixedSameType<T>(objA: T, objB: T): T {
     const union = a;
     for (const attr in b) {
         if (typeof b[attr] === "object" && a[attr]) {
-            union[attr] = mixed(a[attr], b[attr])
+            union[attr] = mixed(a[attr], b[attr]);
         } else {
             union[attr] = b[attr];
         }
