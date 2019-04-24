@@ -19,6 +19,7 @@ export class DataItem extends StComponent<DataItem.IProps, DataItem.IState> {
     public state: DataItem.IState = {
         nowNum: 0,
     };
+    protected timer = 0;
     protected nowNum: number = 0;
     protected targetNum: number = 0;
     protected duration: number;
@@ -40,6 +41,20 @@ export class DataItem extends StComponent<DataItem.IProps, DataItem.IState> {
             this.startUpdateNowNum(nextProps.num);
         }
     }
+    public componentDidMount() {
+        if (this.props.num !== this.state.nowNum) {
+            this.startUpdateNowNum(this.props.num);
+        }
+    }
+    public componentWillUnmount() {
+        if (this.timer) {
+            cancelAnimationFrame(this.timer);
+        }
+
+        this.setState = (state, callback) => {
+            return;
+        };
+    }
     protected getUnitElm() {
         if (this.props.unit) {
             return (<div className="item-unit">{this.props.unit}</div>);
@@ -55,11 +70,12 @@ export class DataItem extends StComponent<DataItem.IProps, DataItem.IState> {
     }
     protected updateNowNum() {
         const nowNum = this.calcNowNum();
+        const self = this;
         this.setState({
             nowNum,
         }, () => {
             if (nowNum !== this.targetNum) {
-                requestAnimationFrame(() => {
+                self.timer = requestAnimationFrame(() => {
                     this.updateNowNum();
                 });
             }

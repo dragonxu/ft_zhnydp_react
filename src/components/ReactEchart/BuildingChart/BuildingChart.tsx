@@ -13,55 +13,52 @@ export class BuildingChart extends ReactEchart {
             }
         });
     }
-    protected getSeries(building: GeneralListStore.IBuilding) {
-        return this.mixedPieSeries({
-            name: "楼宇",
-            radius: ["50%", "70%"],
-            center: ["50%", "36%"],
-            data: [
-                {
-                    name: "政府",
-                    value: building.government,
-                    itemStyle: {
-                        color: "#32ecfa",
-                    },
-                },
-                {
-                    name: "学校",
-                    value: building.school,
-                    itemStyle: {
-                        color: "#27ffd1",
-                    },
-                },
-                {
-                    name: "医院",
-                    value: building.hospital,
-                    itemStyle: {
-                        color: "#ec8b41",
-                    },
-                },
-                {
-                    name: "写字楼",
-                    value: building.office,
-                    itemStyle: {
-                        color: "#f8d751",
-                    },
-                },
-                {
-                    name: "其他",
-                    value: building.else,
-                    itemStyle: {
-                        color: "#32bdfa",
-                    },
-                },
-            ],
-        });
-    }
     protected setOptionByData(building: GeneralListStore.IBuilding) {
-        const series = this.getSeries(building);
-        const options = this.mixedOptions({
+        const options = {
             series: [
-                series,
+                {
+                    type: "pie",
+                    name: "楼宇",
+                    radius: ["50%", "70%"],
+                    center: ["50%", "36%"],
+                    data: [
+                        {
+                            name: "政府",
+                            value: building.government,
+                            itemStyle: {
+                                color: "#32ecfa",
+                            },
+                        },
+                        {
+                            name: "学校",
+                            value: building.school,
+                            itemStyle: {
+                                color: "#27ffd1",
+                            },
+                        },
+                        {
+                            name: "医院",
+                            value: building.hospital,
+                            itemStyle: {
+                                color: "#ec8b41",
+                            },
+                        },
+                        {
+                            name: "写字楼",
+                            value: building.office,
+                            itemStyle: {
+                                color: "#f8d751",
+                            },
+                        },
+                        {
+                            name: "其他",
+                            value: building.else,
+                            itemStyle: {
+                                color: "#32bdfa",
+                            },
+                        },
+                    ],
+                },
             ],
             title: {
                 show: true,
@@ -87,7 +84,7 @@ export class BuildingChart extends ReactEchart {
                     color: "white",
                 },
             },
-        });
+        };
         this.setOption(options);
     }
 }

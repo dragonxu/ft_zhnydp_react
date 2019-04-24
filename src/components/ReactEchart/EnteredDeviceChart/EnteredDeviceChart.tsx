@@ -16,35 +16,8 @@ export class EnteredDeviceChart extends ReactEchart {
             type: "getAll",
         });
     }
-    protected getMixedSeries(enteredDevice: GeneralListStore.IEnteredDevice) {
-        return this.mixedSeries({
-            data: [
-                {
-                    name: "电器设备",
-                    value: enteredDevice.electronic,
-                },
-                {
-                    name: "环境设备",
-                    value: enteredDevice.environment,
-                },
-                {
-                    name: "光储设备",
-                    value: enteredDevice.light,
-                },
-                {
-                    name: "储能设备",
-                    value: enteredDevice.energy,
-                },
-                {
-                    name: "其它设备",
-                    value: enteredDevice.else,
-                },
-            ],
-        });
-    }
     protected setOptionByData(enteredDevice: GeneralListStore.IEnteredDevice) {
-        const series = this.getMixedSeries(enteredDevice);
-        const option = this.mixedOptions({
+        const option = {
             grid: {
                 left: 60,
                 top: 10,
@@ -86,9 +59,33 @@ export class EnteredDeviceChart extends ReactEchart {
                 ],
             },
             series: [
-                series,
+                {
+                    type: "bar",
+                    data: [
+                        {
+                            name: "电器设备",
+                            value: enteredDevice.electronic,
+                        },
+                        {
+                            name: "环境设备",
+                            value: enteredDevice.environment,
+                        },
+                        {
+                            name: "光储设备",
+                            value: enteredDevice.light,
+                        },
+                        {
+                            name: "储能设备",
+                            value: enteredDevice.energy,
+                        },
+                        {
+                            name: "其它设备",
+                            value: enteredDevice.else,
+                        },
+                    ],
+                },
             ],
-        });
+        };
         this.setOption(option);
     }
 }

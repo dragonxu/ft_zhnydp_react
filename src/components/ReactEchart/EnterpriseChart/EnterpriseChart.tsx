@@ -19,55 +19,52 @@ export class EnterpriseChart extends ReactEchart {
             }
         });
     }
-    protected getSeries(enterprise: GeneralListStore.IEnterprise) {
-        return this.mixedPieSeries({
-            name: "企业",
-            radius: ["50%", "70%"],
-            center: ["50%", "36%"],
-            data: [
-                {
-                    name: "钢铁",
-                    value: enterprise.iron,
-                    itemStyle: {
-                        color: "#32ecfa",
-                    },
-                },
-                {
-                    name: "纺织",
-                    value: enterprise.spin,
-                    itemStyle: {
-                        color: "#ec8b41",
-                    },
-                },
-                {
-                    name: "化工",
-                    value: enterprise.chemicalIndustry,
-                    itemStyle: {
-                        color: "#27ffbb",
-                    },
-                },
-                {
-                    name: "机械",
-                    value: enterprise.machine,
-                    itemStyle: {
-                        color: "#f8d751",
-                    },
-                },
-                {
-                    name: "其它",
-                    value: enterprise.else,
-                    itemStyle: {
-                        color: "#32bdfa",
-                    },
-                },
-            ],
-        });
-    }
     protected setOptionByData(enterprise: GeneralListStore.IEnterprise) {
-        const series = this.getSeries(enterprise);
-        const options = this.mixedOptions({
+        const options = {
             series: [
-                series,
+                {
+                    type: "pie",
+                    name: "企业",
+                    radius: ["50%", "70%"],
+                    center: ["50%", "36%"],
+                    data: [
+                        {
+                            name: "钢铁",
+                            value: enterprise.iron,
+                            itemStyle: {
+                                color: "#32ecfa",
+                            },
+                        },
+                        {
+                            name: "纺织",
+                            value: enterprise.spin,
+                            itemStyle: {
+                                color: "#ec8b41",
+                            },
+                        },
+                        {
+                            name: "化工",
+                            value: enterprise.chemicalIndustry,
+                            itemStyle: {
+                                color: "#27ffbb",
+                            },
+                        },
+                        {
+                            name: "机械",
+                            value: enterprise.machine,
+                            itemStyle: {
+                                color: "#f8d751",
+                            },
+                        },
+                        {
+                            name: "其它",
+                            value: enterprise.else,
+                            itemStyle: {
+                                color: "#32bdfa",
+                            },
+                        },
+                    ],
+                },
             ],
             title: {
                 show: true,
@@ -93,7 +90,7 @@ export class EnterpriseChart extends ReactEchart {
                     color: "white",
                 },
             },
-        });
+        };
         this.setOption(options);
     }
 }

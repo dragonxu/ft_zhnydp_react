@@ -1,7 +1,7 @@
 {
     "countRepair": 1,
     "countQX": 27,
-    "countBug": 0,
-    "countInspection": 0,
+    "countBug": 10,
+    "countInspection": 20,
     "countTest": 14
 }

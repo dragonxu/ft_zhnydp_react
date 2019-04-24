@@ -28,6 +28,7 @@ export class GeneralList extends Component<any, GeneralList.IState> {
         nowElectricity: 0,
         terminal: 0,
     };
+    protected willUnmount = false;
     public render() {
         return (
             <div className="general-list">
@@ -38,11 +39,20 @@ export class GeneralList extends Component<any, GeneralList.IState> {
             </div>
         );
     }
+    public componentWillMount() {
+        this.willUnmount = false;
+    }
     public componentDidMount() {
         this.loadData();
     }
+    public componentWillUnmount() {
+        this.willUnmount = true;
+    }
     protected loadData() {
         store.subscribe(() => {
+            if (this.willUnmount) {
+                return;
+            }
             const { data } = store.getState();
             this.setState({
                 collect: data.collect,

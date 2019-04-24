@@ -1,21 +1,32 @@
 import * as Echarts from "echarts";
 import React, { Component, createRef } from "react";
-import { copy, mixedSameType } from "../../common/functions/obj";
-import { StFetch } from "../../common/functions/StFetch";
 import defaultOptions from "../../common/var/ReactEchart/defaultOptions";
+import Axios from "axios";
+import { mixedSameType, copy } from "../../common/functions/obj";
 
 export declare namespace ReactEchart {
     export interface IProps {
-        dataUrl: string;
+        dataUrl?: string;
     }
-    export type TChartType = "line" | "pie" | "bar";
+    export type TChartType = "line" | "pie" | "bar" | "standard";
+    export type ResetFunc = (opt: Echarts.EChartOption) => Echarts.EChartOption;
 }
 export class ReactEchart extends Component<ReactEchart.IProps> {
+    public static readonly LoadDelay = 1000;
     protected static readonly defaultOptions: Echarts.EChartOption = defaultOptions;
     public className: string = "react-echart full-view";
-    protected chartType: ReactEchart.TChartType = "line";
     protected elmRef: React.RefObject<HTMLDivElement> = createRef();
     protected eChart!: Echarts.ECharts;
+    protected dataUrl: string;
+    protected loadTimer = 0;
+    protected chartType: ReactEchart.TChartType = "standard";
+    public getChartTypeOptions(): Echarts.EChartOption {
+        switch (this.chartType) {
+            case "pie":
+                return this.toPieChartTypeOptions();
+        }
+        return copy(ReactEchart.defaultOptions);
+    }
     public render(): JSX.Element {
         return (
             <div className={this.className} ref={this.elmRef}></div>
@@ -23,110 +34,103 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
     }
     public componentDidMount() {
         this.initEChart();
-        const opt = this.getOptions();
-        this.setOption(opt);
+        if (!this.dataUrl && this.props.dataUrl) {
+            this.dataUrl = this.props.dataUrl;
+        }
+        this.loadData();
+    }
+    public componentWillUnmount() {
+        if (this.loadTimer) {
+            clearTimeout(this.loadTimer);
+        }
     }
     public initEChart(): this {
         this.eChart = Echarts.init(this.elmRef.current as HTMLDivElement);
         return this;
     }
-    public setOption(opts: Echarts.EChartOption): this {
-        // console.log(this.eChart, opts);
-        this.eChart.setOption(opts);
-        return this;
+    public setOption(newOption: Echarts.EChartOption, resetFunc?: ReactEchart.ResetFunc) {
+        let options = mixedSameType(this.getChartTypeOptions(), newOption);
+        options = this.rewriteSeries(options);
+        if (typeof resetFunc === "function") {
+            options = resetFunc(options);
+        }
+        this.eChart.setOption(options);
     }
-    public mixinOptions(options: Echarts.EChartOption): Echarts.EChartOption {
-        const defaultOpt = copy(this.getOptions());
-        const selfOptions = copy(options);
-        return mixedSameType(defaultOpt, selfOptions);
-    }
-    public getChartOption() {
-        return this.eChart.getOption();
-    }
-    protected getPieDefaultOptions() {
-        const options = copy(ReactEchart.defaultOptions);
-        options.xAxis = {
-            show: false,
-        };
-        options.yAxis = {
-            show: false,
-        };
-        return options;
-    }
-    protected getBarDefaultOptions() {
-        const options = copy(ReactEchart.defaultOptions);
-        return mixedSameType(options, {
-            xAxis: {
-                axisLabel: {
-                    interval: 0,
-                },
-                axisTick: {
-                    alignWithLabel: true,
-                },
-                splitLine: {
-                    show: false,
-                },
-            },
-            yAxis: {
-                axisLabel: {
-                    interval: 0,
-                },
-                axisTick: {
-                    alignWithLabel: true,
-                },
-                splitLine: {
-                    show: false,
-                },
-            },
+    protected loadData() {
+        const dataUrl = this.dataUrl;
+        if (!dataUrl) {
+            return;
+        }
+        Axios.get(this.props.dataUrl).then((res) => {
+            this.refreshChart(res.data);
+        }).catch((err) => {
+            this.loadDataError(err);
+        }).finally(() => {
+            // this.loadTimer = window.setTimeout(() => {
+            //     this.loadData();
+            // }, ReactEchart.LoadDelay);
         });
     }
-    protected getOptions(): Echarts.EChartOption {
-        if (this.chartType === "pie") {
-            return this.getPieDefaultOptions();
+    protected loadDataError(err: any) {
+        console.error(err);
+    }
+    protected refreshChart(res: any) {
+        console.log(res);
+    }
+    protected rewriteSeries(newOption: Echarts.EChartOption): Echarts.EChartOption {
+        const series = newOption.series;
+        if (series instanceof Array) {
+            series.forEach((seriesItem, index) => {
+                series[index] = this.standardizeSingleSeries(seriesItem, index);
+            });
         }
-        if (this.chartType === "bar") {
-            return this.getBarDefaultOptions();
+        return newOption;
+    }
+    protected standardizeSingleSeries(seriesItem: Echarts.EChartOption.Series, index: number): Echarts.EChartOption.Series {
+        if (!seriesItem.type) {
+            seriesItem.type = "bar";
         }
-        return ReactEchart.defaultOptions;
+        switch (seriesItem.type) {
+            case "pie":
+                seriesItem = this.standardizeSingleSeriesOfPie(seriesItem as Echarts.EChartOption.SeriesPie, index);
+                break;
+            case "line":
+                seriesItem = this.standardizeSingleSeriesOfLine(seriesItem as Echarts.EChartOption.SeriesLine, index);
+                break;
+            case "bar":
+                seriesItem = this.standardizeSingleSeriesOfBar(seriesItem as Echarts.EChartOption.SeriesBar, index);
+                break;
+        }
+        return seriesItem as Echarts.EChartOption.Series;
     }
-    protected async loadData<T>(): Promise<T> {
-        return await StFetch<T>(this.props.dataUrl);
-    }
-    protected mixedPieSeries(newPieSeries: Echarts.EChartOption.SeriesPie) {
-        const defaultPieSeries: Echarts.EChartOption.SeriesPie = {
-            type: "pie",
-            radius: ["50%", "80%"],
-            label: {
-                show: false,
-            },
-            hoverAnimation: false,
-            data: [],
-        };
-        return mixedSameType(defaultPieSeries, newPieSeries);
-    }
-    protected mixedBarSeries(newBarSeries: Echarts.EChartOption.SeriesBar) {
-        const defaultBarSeries: Echarts.EChartOption.SeriesBar = {
-            type: "bar",
+    protected standardizeSingleSeriesOfBar(seriesItem: Echarts.EChartOption.SeriesBar, index: number) {
+        return mixedSameType({
             itemStyle: {
                 color: "#43fdff",
             },
+        }, seriesItem);
+    }
+    protected standardizeSingleSeriesOfLine(seriesItem: Echarts.EChartOption.SeriesLine, index: number) {
+        return mixedSameType({
+
+        }, seriesItem);
+    }
+    protected standardizeSingleSeriesOfPie(seriesItem: Echarts.EChartOption.SeriesPie, index: number) {
+        return mixedSameType({
+            hoverAnimation: false,
+            label: {
+                show: false,
+            },
+        }, seriesItem);
+    }
+    protected toPieChartTypeOptions(): Echarts.EChartOption {
+        const chartTypeOptions = copy(ReactEchart.defaultOptions);
+        chartTypeOptions.xAxis = {
+            show: false,
         };
-        return mixedSameType(defaultBarSeries, newBarSeries);
-    }
-    protected mixedSeries(newSeries: Echarts.EChartOption.Series) {
-        if (this.chartType === "pie") {
-            return this.mixedPieSeries(newSeries as Echarts.EChartOption.SeriesPie);
-        }
-        if (this.chartType === "bar") {
-            return this.mixedBarSeries(newSeries as Echarts.EChartOption.SeriesBar);
-        }
-        return newSeries;
-    }
-    protected mixedOptions(newOpt: Echarts.EChartOption) {
-        const oldOpt = this.getOptions();
-        return this.mixed(oldOpt, newOpt);
-    }
-    protected mixed<T>(oldOpt: T, newOpt: T): T {
-        return mixedSameType(oldOpt, newOpt);
+        chartTypeOptions.yAxis = {
+            show: false,
+        };
+        return chartTypeOptions;
     }
 }

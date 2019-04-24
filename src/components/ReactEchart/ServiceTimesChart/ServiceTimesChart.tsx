@@ -1,5 +1,4 @@
 import * as Echarts from "echarts";
-import { mixedSameType } from "../../../common/functions/obj";
 import { ReactEchart } from "../ReactEchart";
 declare namespace ServiceTimesChart {
     export interface IChartData {
@@ -12,6 +11,7 @@ declare namespace ServiceTimesChart {
 }
 export class ServiceTimesChart extends ReactEchart {
     public chartType: ReactEchart.TChartType = "bar";
+    public timer = 0;
     protected styleOption: Echarts.EChartOption = {
         xAxis: {
             data: [
@@ -24,37 +24,59 @@ export class ServiceTimesChart extends ReactEchart {
         },
         yAxis: {},
     };
-    public componentDidMount() {
-        this.initEChart();
-        this.loadData<ServiceTimesChart.IChartData>().then((res) => {
-            this.setOptionByData(res);
-        });
-    }
-    protected getOptions(): Echarts.EChartOption {
-        return mixedSameType(ReactEchart.defaultOptions, this.styleOption);
-    }
-    protected setOptionByData(data: ServiceTimesChart.IChartData) {
-        const options = this.getOptions();
-        options.grid = {
-            top: 10,
-            bottom: 20,
-        };
-        options.series = [
-            {
-                barWidth: 27,
-                data: [
-                    data.countInspection,
-                    data.countTest,
-                    data.countRepair,
-                    data.countQX,
-                    data.countBug,
-                ],
-                itemStyle: {
-                    color: "#43fdff",
-                },
-                type: "bar",
+    protected refreshChart(data: ServiceTimesChart.IChartData) {
+        console.log(data);
+        const options = {
+            grid: {
+                top: 10,
+                bottom: 20,
             },
-        ];
+            xAxis: {
+                data: [
+                    "巡检",
+                    "预防性测试",
+                    "检修",
+                    "工单抢修",
+                    "缺陷",
+                ],
+            },
+            series: [
+                {
+                    barWidth: 27,
+                    data: [
+                        {
+                            name: "巡检",
+                            value: data.countInspection,
+                        },
+                        {
+                            name: "预防性测试",
+                            value: data.countTest,
+                        },
+                        {
+                            name: "检修",
+                            value: data.countRepair,
+                        },
+                        {
+                            name: "工单抢修",
+                            value: data.countQX,
+                        },
+                        {
+                            name: "缺陷",
+                            value: data.countBug,
+                        },
+                    ],
+                    itemStyle: {
+                        color: "#43fdff",
+                    },
+                    type: "bar",
+                    label: {
+                        show: true,
+                        position: "top",
+                        color: "white",
+                    },
+                },
+            ],
+        };
         this.setOption(options);
     }
 }

@@ -6,13 +6,17 @@ import { DataCount } from "../DataCount/DataCount";
 import { DevelopHistory } from "../DevelopHistory/DevelopHistory";
 import { EnergyType } from "../EnergyType/EnergyType";
 import { GeneralList } from "../GeneralList/GeneralList";
+import { BuildingChart } from "../ReactEchart/BuildingChart/BuildingChart";
+import { EnteredDeviceChart } from "../ReactEchart/EnteredDeviceChart/EnteredDeviceChart";
 import { EnterpriseChart } from "../ReactEchart/EnterpriseChart/EnterpriseChart";
 import { ServiceTimesChart } from "../ReactEchart/ServiceTimesChart/ServiceTimesChart";
 import { ViewBlock } from "../ViewBlock/ViewBlock";
 import "./General.scss";
-import { BuildingChart } from "../ReactEchart/BuildingChart/BuildingChart";
-import { EnteredDeviceChart } from "../ReactEchart/EnteredDeviceChart/EnteredDeviceChart";
 export class General extends Component {
+    public reloadTimer = {
+        interfaceType: 0,
+        dataList: 0,
+    };
     public render() {
         return (
             <div className="general-view">
@@ -79,6 +83,14 @@ export class General extends Component {
     public componentDidMount() {
         this.loadData();
     }
+    public componentWillUnmount() {
+        if (this.reloadTimer.dataList) {
+            clearTimeout(this.reloadTimer.dataList);
+        }
+        if (this.reloadTimer.interfaceType) {
+            clearTimeout(this.reloadTimer.interfaceType);
+        }
+    }
     protected loadData() {
         this.loadDataOfDataList();
         this.loadDataOfInterfaceType();
@@ -90,9 +102,9 @@ export class General extends Component {
                 type: "updateInterfaceType",
             });
         }).finally(() => {
-            setTimeout(() => {
-                this.loadDataOfInterfaceType();
-            }, 1000);
+            // this.reloadTimer.interfaceType = window.setTimeout(() => {
+            //     this.loadDataOfInterfaceType();
+            // }, 1000);
         });
     }
     protected loadDataOfDataList() {
@@ -102,9 +114,9 @@ export class General extends Component {
                 type: "update",
             });
         }).finally(() => {
-            setTimeout(() => {
-                this.loadDataOfDataList();
-            }, 1000);
+            // this.reloadTimer.dataList = window.setTimeout(() => {
+            //     this.loadDataOfDataList();
+            // }, 1000);
         });
     }
 }

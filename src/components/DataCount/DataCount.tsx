@@ -20,6 +20,7 @@ export class DataCount extends StComponent<any, DataCount.IState> {
         checkPointNum: 0,
         energyReport: 0,
     };
+    public willUnmount = false;
     public render() {
         return (
             <div className={this.getClassName()}>
@@ -30,8 +31,14 @@ export class DataCount extends StComponent<any, DataCount.IState> {
             </div>
         );
     }
+    public componentWillMount() {
+        this.willUnmount = false;
+    }
     public componentDidMount() {
         store.subscribe(() => {
+            if (this.willUnmount) {
+                return;
+            }
             const state = store.getState().data;
             this.setState({
                 clientNum: state.clientNum,
@@ -40,5 +47,11 @@ export class DataCount extends StComponent<any, DataCount.IState> {
                 energyReport: state.energyReport,
             });
         });
+    }
+    public componentWillUnmount() {
+        // this.setState = (state, callback) => {
+        //     return;
+        // };
+        this.willUnmount = true;
     }
 }

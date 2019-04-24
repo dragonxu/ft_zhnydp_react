@@ -1,8 +1,12 @@
+import Axios from "axios";
+import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
+
+import "./index.scss";
+
+Axios.defaults.baseURL = "http://localhost:9000/";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

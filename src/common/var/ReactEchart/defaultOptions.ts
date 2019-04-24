@@ -16,6 +16,9 @@ const options: Echarts.EChartOption = {
         axisTick: {
             alignWithLabel: true,
         },
+        splitLine: {
+            show: false,
+        },
     },
     yAxis: {
         axisLabel: {
@@ -30,6 +33,11 @@ const options: Echarts.EChartOption = {
         },
         axisTick: {
             alignWithLabel: true,
+        },
+        splitLine: {
+            lineStyle: {
+                color: "#104e8f",
+            },
         },
     },
 };
