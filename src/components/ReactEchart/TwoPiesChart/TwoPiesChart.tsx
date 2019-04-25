@@ -23,7 +23,6 @@ export class TwoPiesChart extends ReactEchart {
                     name: "采集成功率",
                     radius: ["70%", "100%"],
                     center: ["80%", "50%"],
-                    hoverAnimation: false,
                     label: {
                         show: false,
                     },
@@ -33,6 +32,21 @@ export class TwoPiesChart extends ReactEchart {
                             name: "采集成功率",
                             itemStyle: {
                                 color: "#19db92",
+                            },
+                            label: {
+                                show: true,
+                                position: "center",
+                                formatter: [`{value| ${data.collect}%}`, `{name|采集成功率}`].join("\n"),
+                                rich: {
+                                    name: {
+                                        fontSize: 16,
+                                        color: "#6dc5e2",
+                                    },
+                                    value: {
+                                        fontSize: 30,
+                                        color: "#fff",
+                                    },
+                                },
                             },
                         },
                         {
@@ -46,7 +60,6 @@ export class TwoPiesChart extends ReactEchart {
                     name: "终端在线率",
                     radius: ["70%", "100%"],
                     center: ["20%", "50%"],
-                    hoverAnimation: false,
                     label: {
                         show: false,
                     },
@@ -56,6 +69,21 @@ export class TwoPiesChart extends ReactEchart {
                             name: "终端在线率",
                             itemStyle: {
                                 color: "#27f1ff",
+                            },
+                            label: {
+                                show: true,
+                                position: "center",
+                                formatter: [`{value| ${data.terminal}%}`, `{name|终端在线率}`].join("\n"),
+                                rich: {
+                                    name: {
+                                        fontSize: 16,
+                                        color: "#6dc5e2",
+                                    },
+                                    value: {
+                                        fontSize: 30,
+                                        color: "#fff",
+                                    },
+                                },
                             },
                         },
                         {

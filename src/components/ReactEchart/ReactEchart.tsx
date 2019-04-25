@@ -2,19 +2,19 @@ import * as Echarts from "echarts";
 import React, { Component, createRef } from "react";
 import defaultOptions from "../../common/var/ReactEchart/defaultOptions";
 import Axios from "axios";
-import { mixedSameType, copy } from "../../common/functions/obj";
+import { mixedSameType, copy, getClassByObj } from "../../common/functions/obj";
+import { camelCaseToLine } from "../../common/functions/string";
 
 export declare namespace ReactEchart {
     export interface IProps {
         dataUrl?: string;
     }
-    export type TChartType = "line" | "pie" | "bar" | "standard";
+    export type TChartType = "line" | "pie" | "bar" | "standard" | "customGauge";
     export type ResetFunc = (opt: Echarts.EChartOption) => Echarts.EChartOption;
 }
 export class ReactEchart extends Component<ReactEchart.IProps> {
     public static readonly LoadDelay = 1000;
     protected static readonly defaultOptions: Echarts.EChartOption = defaultOptions;
-    public className: string = "react-echart full-view";
     protected elmRef: React.RefObject<HTMLDivElement> = createRef();
     protected eChart!: Echarts.ECharts;
     protected dataUrl: string;
@@ -24,13 +24,23 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
         switch (this.chartType) {
             case "pie":
                 return this.toPieChartTypeOptions();
+            case "customGauge":
+                return this.toCustomGaugeChartTypeOptions();
         }
         return copy(ReactEchart.defaultOptions);
     }
     public render(): JSX.Element {
         return (
-            <div className={this.className} ref={this.elmRef}></div>
+            <div className={this.getClassName()} ref={this.elmRef}></div>
         );
+    }
+    public getClassName() {
+        let str = "react-echart full-view";
+        const className = getClassByObj(this).name;
+        if (className !== "ReactEchart") {
+            str += " " + camelCaseToLine(className);
+        }
+        return str;
     }
     public componentDidMount() {
         this.initEChart();
@@ -100,8 +110,47 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
             case "bar":
                 seriesItem = this.standardizeSingleSeriesOfBar(seriesItem as Echarts.EChartOption.SeriesBar, index);
                 break;
+            case "gauge":
+                seriesItem = this.standardizeSingleSeriesOfGauge(seriesItem as Echarts.EChartOption.SeriesGauge, index);
+                break;
         }
         return seriesItem as Echarts.EChartOption.Series;
+    }
+    protected standardizeSingleSeriesOfGauge(seriesItem: Echarts.EChartOption.SeriesGauge, index: number): Echarts.EChartOption.SeriesGauge {
+        let opt: Echarts.EChartOption.SeriesGauge = {
+            startAngle: 180,
+            endAngle: 0,
+            radius: "200%",
+            min: 0,
+            max: 100,
+            splitNumber: 1,
+            axisLine: {
+                lineStyle: {
+                    width: 10,
+                },
+            },
+            splitLine: {
+                show: false,
+            },
+            axisTick: {
+                show: false,
+            },
+            axisLabel: {
+                show: false,
+            },
+            pointer: {
+                show: false,
+            },
+        };
+        if (this.chartType === "customGauge") {
+            opt = mixedSameType(opt, {
+                center: ["50%", "100%"],
+                title: {
+                    show: false,
+                },
+            } as any as Echarts.EChartOption.SeriesGauge);
+        }
+        return mixedSameType(opt, seriesItem);
     }
     protected standardizeSingleSeriesOfBar(seriesItem: Echarts.EChartOption.SeriesBar, index: number) {
         return mixedSameType({
@@ -122,6 +171,16 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
                 show: false,
             },
         }, seriesItem);
+    }
+    protected toCustomGaugeChartTypeOptions(): Echarts.EChartOption {
+        return mixedSameType(ReactEchart.defaultOptions, {
+            xAxis: {
+                show: false,
+            },
+            yAxis: {
+                show: false,
+            },
+        });
     }
     protected toPieChartTypeOptions(): Echarts.EChartOption {
         const chartTypeOptions = copy(ReactEchart.defaultOptions);

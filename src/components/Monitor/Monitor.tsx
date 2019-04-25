@@ -5,6 +5,7 @@ import { TwoPiesChart } from "../ReactEchart/TwoPiesChart/TwoPiesChart";
 
 // scss files
 import "./Monitor.scss";
+import { OffOnLineChart } from "../ReactEchart/OffOnLineChart/OffOnLineChart";
 
 export class Monitor extends Component {
     public render() {
@@ -17,6 +18,9 @@ export class Monitor extends Component {
                     </ViewBlock>
                     <ViewBlock className="row-2 row">
                         <TwoPiesChart dataUrl="/getDataList.json"></TwoPiesChart>
+                    </ViewBlock>
+                    <ViewBlock className="row-3 row" blockTitle="客户统计">
+                        <OffOnLineChart dataUrl="/queryOnlineInfo.json"></OffOnLineChart>
                     </ViewBlock>
                 </div>
             </div>

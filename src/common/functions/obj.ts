@@ -28,3 +28,7 @@ export function mixedSameType<T>(objA: T, objB: T): T {
     }
     return union;
 }
+
+export function getClassByObj(obj: any): any {
+    return obj.__proto__.constructor;
+}
