@@ -66,9 +66,9 @@ export class ReactEchart extends Component<ReactEchart.IProps> {
         }).catch((err) => {
             this.loadDataError(err);
         }).finally(() => {
-            // this.loadTimer = window.setTimeout(() => {
-            //     this.loadData();
-            // }, ReactEchart.LoadDelay);
+            this.loadTimer = window.setTimeout(() => {
+                this.loadData();
+            }, ReactEchart.LoadDelay);
         });
     }
     protected loadDataError(err: any) {

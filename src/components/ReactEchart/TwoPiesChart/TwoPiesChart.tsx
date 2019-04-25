@@ -14,25 +14,15 @@ export declare namespace TwoPiesChart {
 }
 
 export class TwoPiesChart extends ReactEchart {
-    public willUnmount = false;
-    public componentWillMount() {
-        this.willUnmount = false;
-    }
-    public componentDidMount() {
-        this.initEChart();
-        // this.refreshChart();
-    }
-    public componentWillUnmount() {
-        this.willUnmount = true;
-    }
+    protected chartType: ReactEchart.TChartType = "pie";
     protected refreshChart(data: TwoPiesChart.IData) {
         const options: EChartOption = {
             series: [
                 {
                     type: "pie",
                     name: "采集成功率",
-                    radius: ["50%", "70%"],
-                    center: ["70%", "50%"],
+                    radius: ["70%", "100%"],
+                    center: ["80%", "50%"],
                     hoverAnimation: false,
                     label: {
                         show: false,
@@ -54,8 +44,8 @@ export class TwoPiesChart extends ReactEchart {
                 {
                     type: "pie",
                     name: "终端在线率",
-                    radius: ["50%", "70%"],
-                    center: ["30%", "50%"],
+                    radius: ["70%", "100%"],
+                    center: ["20%", "50%"],
                     hoverAnimation: false,
                     label: {
                         show: false,

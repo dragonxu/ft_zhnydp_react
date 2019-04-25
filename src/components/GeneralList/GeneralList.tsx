@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { StFetch } from "../../common/functions/StFetch";
 import { store } from "../../redux/GeneralListStore";
 import { DataItem } from "../DataItem/DataItem";
 import "./GeneralList.scss";

@@ -18,8 +18,13 @@
             }
         }
 
-        .row-2{
+        .row-2 {
             height: 190px;
+
+            .view-block-content {
+                padding: 0;
+                height: 100%;
+            }
         }
     }
 }

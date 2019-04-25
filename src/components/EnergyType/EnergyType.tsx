@@ -1,7 +1,10 @@
 import React, { Component, createRef } from "react";
 import { Progress } from "../Progress/Progress";
+import Axios from "axios";
+
+// scss
 import "./EnergyType.scss";
-import { StFetch } from "../../common/functions/StFetch";
+import { ReactEchart } from "../ReactEchart/ReactEchart";
 
 declare namespace EnergyType {
     export interface IData {
@@ -25,6 +28,7 @@ export class EnergyType extends Component<any, EnergyType.IState> {
         hot: 0,
         water: 0,
     };
+    public timer = 0;
     public el = createRef<HTMLDivElement>();
     public render() {
         return (
@@ -71,17 +75,26 @@ export class EnergyType extends Component<any, EnergyType.IState> {
         return this.state.electricity + this.state.hot + this.state.gas + this.state.water;
     }
     public componentDidMount() {
-        this.loadData().then((data) => {
+        this.loadData();
+    }
+    public componentWillUnmount() {
+        if (this.timer) {
+            clearTimeout(this.timer);
+        }
+    }
+    protected  loadData(): void {
+        Axios.get("/queryPowerTypeCount.json").then((res) => {
+            const { data } = res;
             this.setState({
                 electricity: data.electric,
                 gas: data.gas,
                 hot: data.hot,
                 water: data.water,
             });
+        }).finally(() => {
+            this.timer = window.setTimeout(() => {
+                this.loadData();
+            }, ReactEchart.LoadDelay);
         });
-    }
-    protected async loadData(): Promise<EnergyType.IData> {
-        const data = await StFetch<EnergyType.IData>("/queryPowerTypeCount.json");
-        return data;
     }
 }

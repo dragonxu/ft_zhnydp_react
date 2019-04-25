@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StFetch } from "../../common/functions/StFetch";
+import Axios from "axios";
 import { store } from "../../redux/GeneralListStore";
 import { ClientMap } from "../ClientMap/ClientMap";
 import { DataCount } from "../DataCount/DataCount";
@@ -96,27 +96,27 @@ export class General extends Component {
         this.loadDataOfInterfaceType();
     }
     protected loadDataOfInterfaceType() {
-        StFetch("/getInterfaceType.json").then((res) => {
+        Axios.get("/getInterfaceType.json").then((res) => {
             store.dispatch({
-                data: res,
+                data: res.data,
                 type: "updateInterfaceType",
             });
         }).finally(() => {
-            // this.reloadTimer.interfaceType = window.setTimeout(() => {
-            //     this.loadDataOfInterfaceType();
-            // }, 1000);
+            this.reloadTimer.interfaceType = window.setTimeout(() => {
+                this.loadDataOfInterfaceType();
+            }, 1000);
         });
     }
     protected loadDataOfDataList() {
-        StFetch("/getDataList.json").then((res) => {
+        Axios.get("/getDataList.json").then((res) => {
             store.dispatch({
-                data: res,
+                data: res.data,
                 type: "update",
             });
         }).finally(() => {
-            // this.reloadTimer.dataList = window.setTimeout(() => {
-            //     this.loadDataOfDataList();
-            // }, 1000);
+            this.reloadTimer.dataList = window.setTimeout(() => {
+                this.loadDataOfDataList();
+            }, 1000);
         });
     }
 }
